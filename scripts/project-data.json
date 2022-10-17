@@ -1,0 +1,17 @@
+{
+  "workbooks": [
+    {
+      "name": "Territories",
+      "file_path": "Territories.twb",
+      "project_path": "Technology",
+      "tags": [ "Territories", "Sales"
+    
+      ],
+      "hidden_views": [
+        
+      ],
+      "show_tabs": true,
+      "description": "Territories"
+    }
+  ]
+}
