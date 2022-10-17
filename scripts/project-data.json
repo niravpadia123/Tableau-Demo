@@ -1,16 +1,17 @@
 {
   "workbooks": [
     {
-      "name": "Territories",
-      "file_path": "Territories.twb",
+      "name": "Superstore - Profitability Overview",
+      "file_path": "Superstore - Profitability Overview.twb",
       "project_path": "Technology",
-      "tags": [ "Territories", "Sales"
+      "tags": [ "Superstore", "Sales"
     
       ],
       "hidden_views": [
         
       ],
       "show_tabs": true,
+     "description": "Superstore - Profitability Overview"
     }
   ]
 }
