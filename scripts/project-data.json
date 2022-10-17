@@ -12,6 +12,19 @@
       ],
       "show_tabs": true,
       "description": "Airbnb Tutorial"
+    },
+    {
+      "name": "Territories",
+      "file_path": "Territories.twb",
+      "project_path": "Technology",
+      "tags": [ "region", "profit"
+    
+      ],
+      "hidden_views": [
+        
+      ],
+      "show_tabs": true,
+      "description": "Regional"
     }
   ]
 }
