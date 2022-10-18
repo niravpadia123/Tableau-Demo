@@ -1,8 +1,8 @@
 {
   "workbooks": [
     {
-      "name": "VG Contest_Super Sample Superstore_Ryan Sleeper",
-      "file_path": "VG Contest_Super Sample Superstore_Ryan Sleeper.twbx",
+      "name": "Superstore - Profitability Overview",
+      "file_path": "Superstore - Profitability Overview.twb",
       "project_path": "Technology",
       "tags": [ "Superstore", "Sales"
     
@@ -11,7 +11,7 @@
         
       ],
       "show_tabs": true,
-     "description": "VG Contest_Super Sample Superstore_Ryan Sleeper.twbx"
+     "description": "superstore"
     }
   ]
 }
