@@ -1,8 +1,8 @@
 {
   "workbooks": [
     {
-      "name": "Superstore - Profitability Overview",
-      "file_path": "Superstore - Profitability Overview.twb",
+      "name": "Contest Sample Superstore",
+      "file_path": "Contest Sample Superstore.twbx",
       "project_path": "Technology",
       "tags": [ "Superstore", "Sales"
     
@@ -11,7 +11,7 @@
         
       ],
       "show_tabs": true,
-     "description": "superstore"
+     "description": "superstore file"
     }
   ]
 }
