@@ -1,17 +1,17 @@
 {
   "workbooks": [
     {
-      "name": "Contest Sample Superstore",
-      "file_path": "Contest Sample Superstore.twbx",
+      "name": "Contest Superstore",
+      "file_path": "Contest Superstore.twbx",
       "project_path": "Technology",
-      "tags": [ "Superstore", "Sales"
+      "tags": [ "Bluebikes", "Champs"
     
       ],
       "hidden_views": [
         
       ],
       "show_tabs": true,
-     "description": "superstore file"
+     "description": "review new"
     }
   ]
 }
