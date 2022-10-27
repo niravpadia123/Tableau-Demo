@@ -2,7 +2,6 @@
   "workbooks": [
     {
       "name": "Contest Superstore",
-      "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
       "file_path": "Contest Superstore.twbx",
       "project_path": "Technology",
       "sub_folder_path": "Working",
@@ -13,7 +12,6 @@
     },
     {
       "name": "Superstore - Profitability Overview",
-      "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
       "file_path": "Superstore - Profitability Overview.twb",
       "project_path": "Default",
       "sub_folder_path": "Working",
