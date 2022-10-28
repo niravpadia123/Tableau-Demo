@@ -4,10 +4,11 @@ import argparse
 import tableauserverclient as TSC
 def main(args):
     project_data_json = json.loads(args.project_data)
+    a_site = server.sites.get_by_name('Enterprise')
     try:
         # Step 1: Sign in to server.
         tableau_auth = TSC.TableauAuth(
-            args.username, args.password,server.sites.get_by_name('Enterprise'))
+            args.username, args.password,a_site)
         server = TSC.Server(args.server_url)
         with server.auth.sign_in(tableau_auth):
             try:
