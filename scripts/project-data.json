@@ -1,4 +1,5 @@
 {
+  "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
   "workbooks": [
     {
       "name": "Contest Superstore",
@@ -8,7 +9,7 @@
       "tags": ["sample", "temp"],
       "hidden_views": ["Growth Rates"],
       "show_tabs": true,
-      "description": "ssaas"
+      "description": "dsd"
     }
   ]
 }
