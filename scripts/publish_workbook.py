@@ -7,7 +7,7 @@ def main(args):
     try:
         # Step 1: Sign in to server.
         tableau_auth = TSC.TableauAuth(
-            args.username, args.password,args.site_id)
+            args.username, args.password,site_id='ENTERPRISE')
         server = TSC.Server(args.server_url)
         with server.auth.sign_in(tableau_auth):
             try:
