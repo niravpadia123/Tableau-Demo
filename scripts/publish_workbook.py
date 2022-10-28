@@ -12,6 +12,9 @@ def main(args):
         server = TSC.Server(args.server_url)
         project_data_json = project_data['workbooks']
         with server.auth.sign_in(tableau_auth):
+            all_sites, pagination_item = server.sites.get()
+            for site in all_sites:
+                print(site.id, site.name, site.content_url, site.state)
             try:
                 for data in project_data_json:
                     wb_path = os.path.dirname(os.path.realpath(__file__)).rsplit(
