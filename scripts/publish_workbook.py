@@ -15,8 +15,11 @@ def main(args):
             try:
                 
                 all_sites, pagination_item = server.sites.get()
+                
                 for site in all_sites:
-                   print(site.id, site.name, site.content_url, site.state)
+                    print(site.id, site.name, site.content_url, site.state)
+
+
                 for data in project_data_json:
                     wb_path = os.path.dirname(os.path.realpath(__file__)).rsplit(
                         '/', 1)[0] + "/workbooks/" + data['file_path']
