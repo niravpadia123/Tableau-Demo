@@ -10,6 +10,9 @@ def main(args):
         tableau_auth = TSC.TableauAuth(
             args.username, args.password,project_data['site_id'])
         server = TSC.Server(args.server_url)
+        all_sites, pagination_item = server.sites.get()
+        for site in all_sites:
+         print(site.id, site.name, site.content_url, site.state)
         project_data_json = project_data['workbooks']
         with server.auth.sign_in(tableau_auth):
             try:
