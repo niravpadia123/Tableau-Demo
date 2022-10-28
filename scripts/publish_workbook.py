@@ -7,7 +7,8 @@ def main(args):
     try:
         # Step 1: Sign in to server.
         tableau_auth = TSC.TableauAuth(
-            args.username, args.password)
+            args.username, args.password,args.site_id)
+            print(args.site_id)
         server = TSC.Server(args.server_url)
         with server.auth.sign_in(tableau_auth):
             try:
@@ -63,5 +64,6 @@ if __name__ == '__main__':
                         type=str, required=True)
     parser.add_argument('--project_data', action='store',
                         type=str, required=True)
+    parser.add_argument("--site", "-S", help="site name")                    
     args = parser.parse_args()
     main(args)

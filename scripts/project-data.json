@@ -4,21 +4,10 @@
       "name": "Contest Superstore",
       "file_path": "Contest Superstore.twbx",
       "project_path": "Technology",
-      "sub_folder_path": "Working",
       "tags": ["sample", "temp"],
       "hidden_views": ["Growth Rates"],
       "show_tabs": true,
       "description": "desc"
-    },
-    {
-      "name": "Superstore - Profitability Overview",
-      "file_path": "Superstore - Profitability Overview.twb",
-      "project_path": "Default",
-      "sub_folder_path": "Working",
-      "tags": ["sample", "temp"],
-      "hidden_views": ["Growth Rates"],
-      "show_tabs": true,
-      "description": "Fix"
     }
   ]
 }
