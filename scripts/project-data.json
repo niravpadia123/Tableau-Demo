@@ -1,15 +1,15 @@
 {
-  "site_id": "",
   "workbooks": [
     {
       "name": "Contest Superstore",
+      "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
+      "site_name": "Enterprise",
       "file_path": "Contest Superstore.twbx",
       "project_path": "Technology",
-      "sub_folder_path": "Technology",
       "tags": ["sample", "temp"],
       "hidden_views": ["Growth Rates"],
       "show_tabs": true,
-      "description": "dassda"
+      "description": "Superstore"
     }
   ]
 }
