@@ -2,8 +2,8 @@
   "workbooks": [
     {
       "name": "Contest Superstore",
-      "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
-      "site_name": "DataLab",
+      "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
+      "site_name": "Enterprise",
       "file_path": "Contest Superstore.twbx",
       "project_path": "Administration",
       "tags": ["sample", "temp"],
