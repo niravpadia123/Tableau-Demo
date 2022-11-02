@@ -1,15 +1,30 @@
 {
   "workbooks": [
     {
-      "name": "Contest Superstore",
+      "name": "Profitablity Dashboard",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
       "site_name": "Enterprise",
-      "file_path": "Contest Superstore.twbx",
-      "project_path": "Technology",
+      "file_path": "Profitablity Dashboard.twb",
+      "project_path": "Working",
       "tags": ["sample", "temp"],
       "hidden_views": ["Growth Rates"],
       "show_tabs": true,
-      "description": "Superstore"
+      "description": "Sample description",
+      "is_site_default": true,
+      "server_url": "https://tableau.devinvh.com/"
+    },
+    {
+      "name": "Price Forecast Dashboard",
+      "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
+      "site_name": "DataLab",
+      "file_path": "Price Forecast Dashboard.twbx",
+      "project_path": "Default",
+      "tags": [],
+      "hidden_views": [],
+      "show_tabs": true,
+      "description": "Test",
+      "is_site_default": false,
+      "server_url": "https://tableau.devinvh.com/"
     }
   ]
 }

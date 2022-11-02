@@ -8,7 +8,6 @@ on:
 env:
   UNAME: ${{secrets.USERNAME}}
   PASS: ${{secrets.PASSWORD}}
-  SERVURL: ${{secrets.SERVERURL}}
 
 jobs:
   Publish:
@@ -39,7 +38,7 @@ jobs:
         run: |
           project_data=`jq '.workbooks' ./scripts/project-data.json`
           if [ "$project_data" != '' ];then
-              python3 ./scripts/publish_workbook.py --username "${{env.UNAME}}" --password "${{env.PASS}}" --server_url "${{env.SERVURL}}" --project_data "${project_data}"
+              python3 ./scripts/publish_workbook.py --username "${{env.UNAME}}" --password "${{env.PASS}}"  --project_data "${project_data}"
           else
               echo "project data of json is not accessable."
           fi
