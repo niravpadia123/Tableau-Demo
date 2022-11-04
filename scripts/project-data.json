@@ -9,7 +9,7 @@
       "tags": ["sample", "temp"],
       "hidden_views": ["Growth Rates"],
       "show_tabs": true,
-      "description": "Sample description",
+      "description": "Sample ",
       "is_site_default": true,
       "server_url": "https://tableau.devinvh.com/"
     },
@@ -22,7 +22,7 @@
       "tags": [],
       "hidden_views": [],
       "show_tabs": true,
-      "description": "Test",
+      "description": "Test new",
       "is_site_default": false,
       "server_url": "https://tableau.devinvh.com/"
     }
