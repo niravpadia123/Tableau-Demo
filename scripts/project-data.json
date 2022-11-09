@@ -3,9 +3,9 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "sales only",
+      "name": "sales only new",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "sales only.twbx",
+      "file_path": "sales only new.twbx",
       "project_path": "Working",
       "tags": ["new", "temp"],
       "hidden_views": [""],
