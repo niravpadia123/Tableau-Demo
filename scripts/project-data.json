@@ -20,7 +20,7 @@
           "ViewComments": "Allow",
           "AddComment": "Allow",
           "ExportImage": "Allow",
-          "ExportData": "Deny",
+          "ExportData": "Allow",
           "RunExplainData": "Deny",
           "ShareView": "Deny",
           "ViewUnderlyingData": "Deny",                    
