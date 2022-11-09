@@ -3,40 +3,6 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "Price Forecast",
-      "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Price Forecast.twbx",
-      "project_path": "Working",
-      "tags": ["sample", "temp"],
-      "hidden_views": ["Growth Rates"],
-      "show_tabs": true,
-      "is_wb_new": false,
-      "is_site_default": true,
-      "permissions": {
-        "permission_user_name": "Nirav.Padia",
-        "permission_template": {
-          "Read": "Allow",
-          "Write": "Allow",
-          "Filter": "Allow",
-          "AddComment": "Allow",
-          "ViewComments": "Deny",
-          "ShareView": "Deny",
-          "ExportData": "Deny",
-          "ViewUnderlyingData": "Deny",
-          "ExportImage": "Deny",
-          "Delete": "Deny",
-          "ChangeHierarchy": "Deny",
-          "ChangePermissions": "Deny",
-          "WebAuthoring": "Deny",
-          "ExportXml": "Deny",
-          "RunExplainData": "Deny",
-          "CreateRefreshMetrics": "Deny"
-        }
-      }
-    },
-    {
-      "server_url": "https://tableau.devinvh.com/",
-      "site_name": "Enterprise",
       "name": "Profitablity Dashboard",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
       "file_path": "Profitablity Dashboard.twb",
@@ -50,21 +16,21 @@
         "permission_user_name": "Nirav.Padia",
         "permission_template": {
           "Read": "Allow",
-          "Write": "Allow",
           "Filter": "Allow",
-          "AddComment": "Allow",
           "ViewComments": "Allow",
-          "ShareView": "Allow",
-          "ExportData": "Allow",
-          "ViewUnderlyingData": "Deny",
+          "AddComment": "Allow",
           "ExportImage": "Deny",
-          "Delete": "Deny",
-          "ChangeHierarchy": "Deny",
-          "ChangePermissions": "Deny",
+          "ExportData": "Deny",
+          "RunExplainData": "Deny",
+          "ShareView": "Deny",
+          "ViewUnderlyingData": "Deny",                    
           "WebAuthoring": "Deny",
           "ExportXml": "Deny",
-          "RunExplainData": "Deny",
-          "CreateRefreshMetrics": "Deny"
+          "Write": "Deny",
+          "CreateRefreshMetrics": "Deny",
+          "ChangeHierarchy": "Deny",
+          "Delete": "Deny",
+          "ChangePermissions": "Deny"
         }
       }
     }
