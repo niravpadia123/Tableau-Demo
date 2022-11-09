@@ -26,7 +26,7 @@
           "ViewUnderlyingData": "Allow",                    
           "WebAuthoring": "Allow",
           "ExportXml": "Allow",
-          "Write": "Deny",
+          "Write": "Allow",
           "CreateRefreshMetrics": "Deny",
           "ChangeHierarchy": "Deny",
           "Delete": "Deny",
