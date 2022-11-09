@@ -27,7 +27,7 @@
           "WebAuthoring": "Allow",
           "ExportXml": "Allow",
           "Write": "Allow",
-          "CreateRefreshMetrics": "Deny",
+          "CreateRefreshMetrics": "Allow",
           "ChangeHierarchy": "Deny",
           "Delete": "Deny",
           "ChangePermissions": "Deny"
