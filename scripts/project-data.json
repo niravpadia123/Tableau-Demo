@@ -24,7 +24,7 @@
           "RunExplainData": "Allow",
           "ShareView": "Allow",
           "ViewUnderlyingData": "Allow",                    
-          "WebAuthoring": "Deny",
+          "WebAuthoring": "Allow",
           "ExportXml": "Deny",
           "Write": "Deny",
           "CreateRefreshMetrics": "Deny",
