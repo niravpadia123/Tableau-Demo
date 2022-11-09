@@ -3,14 +3,14 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "Profitablity Dashboard",
+      "name": "sales only",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Profitablity Dashboard.twb",
+      "file_path": "sales only.twbx",
       "project_path": "Working",
-      "tags": ["sample", "temp"],
-      "hidden_views": ["Growth Rates"],
+      "tags": ["new", "temp"],
+      "hidden_views": [""],
       "show_tabs": true,
-      "is_wb_new": false,
+      "is_wb_new": true,
       "is_site_default": true,
       "permissions": {
         "permission_user_name": "Nirav.Padia",
@@ -27,10 +27,10 @@
           "WebAuthoring": "Allow",
           "ExportXml": "Allow",
           "Write": "Allow",
-          "CreateRefreshMetrics": "Deny",
-          "ChangeHierarchy": "Deny",
-          "Delete": "Deny",
-          "ChangePermissions": "Deny"
+          "CreateRefreshMetrics": "Allow",
+          "ChangeHierarchy": "Allow",
+          "Delete": "Allow",
+          "ChangePermissions": "Allow"
         }
       }
     }
