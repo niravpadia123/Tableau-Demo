@@ -19,7 +19,7 @@
           "Filter": "Allow",
           "ViewComments": "Allow",
           "AddComment": "Allow",
-          "ExportImage": "Deny",
+          "ExportImage": "Allow",
           "ExportData": "Deny",
           "RunExplainData": "Deny",
           "ShareView": "Deny",
