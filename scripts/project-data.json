@@ -1,30 +1,72 @@
 {
   "workbooks": [
     {
+      "server_url": "https://tableau.devinvh.com/",
+      "site_name": "Enterprise",
+      "name": "Price Forecast",
+      "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
+      "file_path": "Price Forecast.twbx",
+      "project_path": "Working",
+      "tags": ["sample", "temp"],
+      "hidden_views": ["Growth Rates"],
+      "show_tabs": true,
+      "is_wb_new": false,
+      "is_site_default": true,
+      "permissions": {
+        "permission_user_name": "Nirav.Padia",
+        "permission_template": {
+          "Read": "Allow",
+          "Write": "Allow",
+          "Filter": "Allow",
+          "AddComment": "Allow",
+          "ViewComments": "Deny",
+          "ShareView": "Deny",
+          "ExportData": "Deny",
+          "ViewUnderlyingData": "Deny",
+          "ExportImage": "Deny",
+          "Delete": "Deny",
+          "ChangeHierarchy": "Deny",
+          "ChangePermissions": "Deny",
+          "WebAuthoring": "Deny",
+          "ExportXml": "Deny",
+          "RunExplainData": "Deny",
+          "CreateRefreshMetrics": "Deny"
+        }
+      }
+    },
+    {
+      "server_url": "https://tableau.devinvh.com/",
+      "site_name": "Enterprise",
       "name": "Profitablity Dashboard",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "site_name": "Enterprise",
       "file_path": "Profitablity Dashboard.twb",
       "project_path": "Working",
       "tags": ["sample", "temp"],
       "hidden_views": ["Growth Rates"],
       "show_tabs": true,
-      "description": "Sample ",
+      "is_wb_new": false,
       "is_site_default": true,
-      "server_url": "https://tableau.devinvh.com/"
-    },
-    {
-      "name": "Price Forecast Dashboard",
-      "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
-      "site_name": "DataLab",
-      "file_path": "Price Forecast Dashboard.twbx",
-      "project_path": "Default",
-      "tags": [],
-      "hidden_views": [],
-      "show_tabs": true,
-      "description": "Test new",
-      "is_site_default": false,
-      "server_url": "https://tableau.devinvh.com/"
+      "permissions": {
+        "permission_user_name": "Nirav.Padia",
+        "permission_template": {
+          "Read": "Allow",
+          "Write": "Allow",
+          "Filter": "Allow",
+          "AddComment": "Allow",
+          "ViewComments": "Allow",
+          "ShareView": "Allow",
+          "ExportData": "Allow",
+          "ViewUnderlyingData": "Deny",
+          "ExportImage": "Deny",
+          "Delete": "Deny",
+          "ChangeHierarchy": "Deny",
+          "ChangePermissions": "Deny",
+          "WebAuthoring": "Deny",
+          "ExportXml": "Deny",
+          "RunExplainData": "Deny",
+          "CreateRefreshMetrics": "Deny"
+        }
+      }
     }
   ]
 }
