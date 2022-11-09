@@ -10,7 +10,7 @@
       "tags": ["new", "temp"],
       "hidden_views": [""],
       "show_tabs": true,
-      "is_wb_new": true,
+      "is_wb_new": false,
       "is_site_default": true,
       "permissions": {
         "permission_user_name": "Nirav.Padia",
