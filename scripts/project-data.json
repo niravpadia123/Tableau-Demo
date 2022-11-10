@@ -61,64 +61,6 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "Superstore - Profitability Overview",
-      "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Superstore - Profitability Overview.twb",
-      "project_path": "Technology",
-      "tags": ["new", "temp"],
-      "hidden_views": [""],
-      "show_tabs": true,
-      "is_site_default": true,
-      "permissions": [
-        {
-          "permission_group_name": "All Users",
-          "permission_user_name": "",
-          "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Allow",
-            "RunExplainData": "Allow",
-            "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",                    
-            "WebAuthoring": "Allow",
-            "ExportXml": "Deny",
-            "Write": "Deny",
-            "CreateRefreshMetrics": "Deny",
-            "ChangeHierarchy": "Deny",
-            "Delete": "Deny",
-            "ChangePermissions": "Deny"
-        }
-        },
-        {
-          "permission_group_name": "",
-          "permission_user_name": "Nirav.Padia",
-          "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Allow",
-            "RunExplainData": "Allow",
-            "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",                    
-            "WebAuthoring": "Allow",
-            "ExportXml": "Deny",
-            "Write": "Deny",
-            "CreateRefreshMetrics": "Deny",
-            "ChangeHierarchy": "Deny",
-            "Delete": "Deny",
-            "ChangePermissions": "Deny"
-        }
-        }
-      ]
-    },
-    {
-      "server_url": "https://tableau.devinvh.com/",
-      "site_name": "Enterprise",
       "name": "Forecast 2022",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
       "file_path": "Forecast 2022.twbx",
