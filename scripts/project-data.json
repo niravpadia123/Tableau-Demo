@@ -3,9 +3,9 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "Superstore - Profitability _Overview",
+      "name": "Forecast",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Superstore - Profitability _Overview.twb",
+      "file_path": "Forecast.twbx",
       "project_path": "Technology",
       "tags": ["wq", "temp"],
       "hidden_views": [""],
@@ -39,9 +39,9 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "Superstore - Profitability Overview",
+      "name": "Price Forecast",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Superstore - Profitability Overview.twb",
+      "file_path": "Price Forecast.twbx",
       "project_path": "Technology",
       "tags": ["new", "temp"],
       "hidden_views": [""],
