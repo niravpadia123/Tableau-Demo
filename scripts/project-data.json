@@ -3,9 +3,9 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "Forecast 20",
+      "name": "Superstore - Profitability Overview",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Forecast 20.twbx",
+      "file_path": "Superstore - Profitability Overview.twb",
       "project_path": "Technology",
       "tags": ["wq", "temap"],
       "hidden_views": [""],
