@@ -3,9 +3,9 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "Superstore 20",
+      "name": "Forecast 20",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Superstore 20.twb",
+      "file_path": "Forecast 20.twbx",
       "project_path": "Working",
       "tags": ["sales", "temp"],
       "hidden_views": [""],
@@ -83,9 +83,9 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "Forecast 20",
+      "name": "Superstore 20",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Forecast 20.twbx",
+      "file_path": "Superstore 20.twbx",
       "project_path": "Working",
       "tags": ["sales", "temp"],
       "hidden_views": [""],
