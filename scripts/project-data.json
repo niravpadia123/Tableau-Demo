@@ -3,9 +3,9 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "Forecast",
+      "name": "Forecast 20",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Forecast.twbx",
+      "file_path": "Forecast 20.twbx",
       "project_path": "Technology",
       "tags": ["wq", "temp"],
       "hidden_views": [""],
@@ -39,9 +39,9 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "name": "Price Forecast",
+      "name": "Forecast 2022",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Price Forecast.twbx",
+      "file_path": "Forecast 2022.twbx",
       "project_path": "Technology",
       "tags": ["new", "temp"],
       "hidden_views": [""],
