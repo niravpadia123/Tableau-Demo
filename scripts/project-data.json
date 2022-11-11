@@ -3,10 +3,10 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "DataLab",
-      "name": "Forecast 2022",
+      "name": "Forecast 2022.1",
       "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
-      "file_path": "Forecast 2022.twbx",
-      "project_path": "Online",
+      "file_path": "Forecast 2022.1.twbx",
+      "project_path": "Test1",
       "tags": ["profit", "sales"],
       "hidden_views": [""],
       "show_tabs": true,
@@ -33,10 +33,24 @@
             "Delete": "Deny",
             "ChangePermissions": "Deny"
         }
-        },
+        }
+      ]
+    },
+    {
+      "server_url": "https://tableau.devinvh.com/",
+      "site_name": "DataLab",
+      "name": "Forecast 2022.1",
+      "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
+      "file_path": "Forecast 2022.1.twbx",
+      "project_path": "Test1",
+      "tags": ["profit", "sales"],
+      "hidden_views": [""],
+      "show_tabs": true,
+      "is_site_default": false,
+      "permissions": [
         {
-          "permission_group_name": "",
-          "permission_user_name": "Nirav.Padia",
+          "permission_group_name": "All Users",
+          "permission_user_name": "",
           "permission_template": {
             "Read": "Allow",
             "Filter": "Allow",
@@ -46,11 +60,11 @@
             "ExportData": "Allow",
             "RunExplainData": "Allow",
             "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",                    
-            "WebAuthoring": "Allow",
-            "ExportXml": "Allow",
-            "Write": "Allow",
-            "CreateRefreshMetrics": "Allow",
+            "ViewUnderlyingData": "Deny",                    
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Deny",
             "ChangeHierarchy": "Deny",
             "Delete": "Deny",
             "ChangePermissions": "Deny"
