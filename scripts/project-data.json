@@ -3,10 +3,10 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "DataLab",
-      "name": "Superstore 20",
+      "name": "Forecast 20",
       "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
-      "file_path": "Superstore 20.twb",
-      "project_path": "Test1",
+      "file_path": "Forecast 20.twbx",
+      "project_path": "Online",
       "tags": ["waq", ""],
       "hidden_views": [""],
       "show_tabs": true,
