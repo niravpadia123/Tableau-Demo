@@ -7,7 +7,7 @@
       "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
       "file_path": "Forecast 2022.twbx",
       "project_path": "Online",
-      "tags": ["profit", "new"],
+      "tags": ["profit", "sales"],
       "hidden_views": [""],
       "show_tabs": true,
       "is_site_default": false,
@@ -51,7 +51,7 @@
             "ExportXml": "Allow",
             "Write": "Allow",
             "CreateRefreshMetrics": "Allow",
-            "ChangeHierarchy": "Allow",
+            "ChangeHierarchy": "Deny",
             "Delete": "Deny",
             "ChangePermissions": "Deny"
         }
