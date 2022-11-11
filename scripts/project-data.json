@@ -3,9 +3,9 @@
     {
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "DataLab",
-      "name": "Forecast 20",
+      "name": "Forecast 2022",
       "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
-      "file_path": "Forecast 20.twbx",
+      "file_path": "Forecast 2022.twbx",
       "project_path": "Test1",
       "tags": ["profit", ""],
       "hidden_views": [""],
