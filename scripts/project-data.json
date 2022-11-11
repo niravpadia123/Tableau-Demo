@@ -2,15 +2,15 @@
   "workbooks": [
     {
       "server_url": "https://tableau.devinvh.com/",
-      "site_name": "Enterprise",
-      "name": "Tech Forecast 20",
-      "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "Tech Forecast 20.twbx",
-      "project_path": "Technology",
+      "site_name": "DataLab",
+      "name": "Forecast 20",
+      "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
+      "file_path": "Forecast 20.twbx",
+      "project_path": "Test1",
       "tags": ["waq", "temdaap"],
       "hidden_views": [""],
       "show_tabs": true,
-      "is_site_default": true,
+      "is_site_default": false,
       "permissions": [
         {
           "permission_group_name": "All Users",
