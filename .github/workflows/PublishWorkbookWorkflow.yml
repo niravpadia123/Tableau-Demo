@@ -38,7 +38,7 @@ jobs:
         run: |
           project_data=`jq '.workbooks' ./scripts/project-data.json`
           if [ "$project_data" != '' ];then
-              python3 ./scripts/publish_workbook.py --username "${{env.UNAME}}" --password "${{env.PASS}}"  --project_data "${project_data}"
+              python3 ./scripts/main.py --username "${{env.UNAME}}" --password "${{env.PASS}}"  --project_data "${project_data}"
           else
               echo "project data of json is not accessable."
           fi
