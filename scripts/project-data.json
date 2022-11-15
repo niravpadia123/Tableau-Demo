@@ -6,7 +6,7 @@
       "name": "Forecast 2022.1",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
       "file_path": "Forecast 2022.1.twbx",
-      "project_path": "Technology",
+      "project_path": "Tech Testing",
       "tags": [],
       "hidden_views": [],
       "is_workbook_new": true,
@@ -65,7 +65,7 @@
       "name": "Superstore 20",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
       "file_path": "Superstore 20.twb",
-      "project_path": "Technology",
+      "project_path": "Tech Testing",
       "tags": [],
       "hidden_views": [],
       "is_workbook_new": true,
@@ -124,7 +124,7 @@
       "name": "Forecast 2022.2",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
       "file_path": "Forecast 2022.2.twbx",
-      "project_path": "Technology",
+      "project_path": "Tech Testing",
       "tags": [],
       "hidden_views": [],
       "is_workbook_new": true,
@@ -183,10 +183,10 @@
       "name": "Forecast 2022.1",
       "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
       "file_path": "Forecast 2022.1.twbx",
-      "project_path": "Test1",
+      "project_path": "Online",
       "tags": [],
       "hidden_views": [],
-      "is_workbook_new": true,
+      "is_workbook_new": false,
       "show_tabs": true,
       "is_site_default": false,
       "permissions": [
@@ -209,7 +209,7 @@
             "CreateRefreshMetrics": "Allow",
             "ChangeHierarchy": "Allow",
             "Delete": "Allow",
-            "ChangePermissions": "Allow"
+            "ChangePermissions": "Deny"
           }
         },
         {
@@ -231,7 +231,7 @@
             "CreateRefreshMetrics": "Allow",
             "ChangeHierarchy": "Allow",
             "Delete": "Allow",
-            "ChangePermissions": "Allow"
+            "ChangePermissions": "Deny"
           }
         }
       ]
@@ -245,7 +245,7 @@
       "project_path": "Test1",
       "tags": [],
       "hidden_views": [],
-      "is_workbook_new": true,
+      "is_workbook_new": false,
       "show_tabs": true,
       "is_site_default": false,
       "permissions": [
@@ -268,7 +268,7 @@
             "CreateRefreshMetrics": "Allow",
             "ChangeHierarchy": "Allow",
             "Delete": "Allow",
-            "ChangePermissions": "Allow"
+            "ChangePermissions": "Deny"
           }
         },
         {
@@ -290,7 +290,7 @@
             "CreateRefreshMetrics": "Allow",
             "ChangeHierarchy": "Allow",
             "Delete": "Allow",
-            "ChangePermissions": "Allow"
+            "ChangePermissions": "Deny"
           }
         }
       ]
@@ -301,10 +301,10 @@
       "name": "Forecast 2022.2",
       "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
       "file_path": "Forecast 2022.2.twbx",
-      "project_path": "Test1",
+      "project_path": "Online",
       "tags": ["profit"],
       "hidden_views": [],
-      "is_workbook_new": true,
+      "is_workbook_new": false,
       "show_tabs": true,
       "is_site_default": false,
       "permissions": [
@@ -327,7 +327,7 @@
             "CreateRefreshMetrics": "Allow",
             "ChangeHierarchy": "Allow",
             "Delete": "Allow",
-            "ChangePermissions": "Allow"
+            "ChangePermissions": "Deny"
           }
         },
         {
@@ -349,7 +349,7 @@
             "CreateRefreshMetrics": "Allow",
             "ChangeHierarchy": "Allow",
             "Delete": "Allow",
-            "ChangePermissions": "Allow"
+            "ChangePermissions": "Deny"
           }
         }
       ]
