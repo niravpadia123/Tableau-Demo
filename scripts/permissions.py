@@ -11,7 +11,7 @@ def query_permission(data, wb_id, permission_user_or_group_id, version, auth_tok
     """
     Funcrion Description
     """
-    url = f"https://tableau.devinvh.com/api/{version}/sites/{data['site_id']}/workbooks/{wb_id}/permissions"
+    url = f"{data['server_url']}api/{version}/sites/{data['site_id']}/workbooks/{wb_id}/permissions"
 
     server_response = requests.get(
         url, headers={'x-tableau-auth': auth_token}, timeout=5000)
@@ -37,7 +37,7 @@ def add_permission(data, wb_id, permission_user_or_group_id, version, auth_token
     """
     Funcrion Description
     """
-    url = f"https://tableau.devinvh.com/api/{version}/sites/{data['site_id']}/workbooks/{wb_id}/permissions"
+    url = f"{data['server_url']}api/{version}/sites/{data['site_id']}/workbooks/{wb_id}/permissions"
 
     xml_request = ET.Element('tsRequest')
     permissions_element = ET.SubElement(xml_request, 'permissions')
@@ -64,9 +64,11 @@ def delete_permission(data, auth_token, wb_id, permission_user_or_group_id, perm
     Funcrion Description
     """
     if is_group:
-        url = f"https://tableau.devinvh.com/api/{version}/sites/{data['site_id']}/workbooks/{wb_id}/permissions/groups/{permission_user_or_group_id}/{permission_name}/{existing_mode}"
+        group_or_user = "groups"
     else:
-        url = f"https://tableau.devinvh.com/api/{version}/sites/{data['site_id']}/workbooks/{wb_id}/permissions/users/{permission_user_or_group_id}/{permission_name}/{existing_mode}"
+        group_or_user = "users"
+
+    url = f"{data['server_url']}api/{version}/sites/{data['site_id']}/workbooks/{wb_id}/permissions/{group_or_user}/{permission_user_or_group_id}/{permission_name}/{existing_mode}"
 
     server_response = requests.delete(
         url, headers={'x-tableau-auth': auth_token},

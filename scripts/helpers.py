@@ -47,7 +47,7 @@ def sign_in(data, username, password):
     return server, auth_token, version
 
 
-def get_project(server, data):
+def get_project_id(server, data):
     """
     Funcrion Description
     """
