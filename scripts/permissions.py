@@ -7,7 +7,8 @@ import requests
 xmlns = {'t': 'http://tableau.com/api'}
 
 
-def query_permission(data, wb_id, permission_user_or_group_id, version, auth_token, is_group):
+def query_permission(data, wb_id, permission_user_or_group_id,
+                     version, auth_token, is_group):
     """
     Funcrion Description
     """
@@ -33,7 +34,8 @@ def query_permission(data, wb_id, permission_user_or_group_id, version, auth_tok
                 return capability.findall('.//t:capability', namespaces=xmlns)
 
 
-def add_permission(data, wb_id, permission_user_or_group_id, version, auth_token, permission_name, permission_mode, is_group):
+def add_permission(data, wb_id, permission_user_or_group_id, version,
+                   auth_token, permission_name, permission_mode, is_group):
     """
     Funcrion Description
     """
@@ -59,7 +61,8 @@ def add_permission(data, wb_id, permission_user_or_group_id, version, auth_token
     _check_status(server_request, 200)
 
 
-def delete_permission(data, auth_token, wb_id, permission_user_or_group_id, permission_name, existing_mode, version, is_group):
+def delete_permission(data, auth_token, wb_id, permission_user_or_group_id,
+                      permission_name, existing_mode, version, is_group):
     """
     Funcrion Description
     """
