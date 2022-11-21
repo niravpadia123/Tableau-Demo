@@ -47,18 +47,18 @@ def sign_in(data, username, password):
     return server, auth_token, version
 
 
-def get_project_id(server, data):
+def get_project_id(server, project_path, file_path):
     """
     Funcrion Description
     """
     all_projects, pagination_item = server.projects.get()
     project = next(
-        (project for project in all_projects if project.name == data['project_path']), None)
+        (project for project in all_projects if project.name == project_path), None)
     if project.id is not None:
         return project.id
     else:
         raise LookupError(
-            f"The project for {data['file_path']} workbook could not be found.")
+            f"The project for {file_path} workbook could not be found.")
 
 
 def get_group_id(server, permission_group_name):
@@ -79,3 +79,23 @@ def get_user_id(server, permission_user_name):
     user_id_list = [
         user.id for user in all_users if user.name == permission_user_name]
     return user_id_list
+
+
+def get_ds_id(server, ds):
+    """
+    Funcrion Description
+    """
+    all_datasources, pagination_item = server.datasources.get()
+
+    ds_id_list = [
+        datasource.id for datasource in all_datasources if datasource.name == ds['ds_name'] and datasource._project_name == ds['get_ds_project_name']]
+    return ds_id_list
+
+
+def dl_ds(server, ds_id):
+    """
+    Funcrion Description
+    """
+    file_path = server.datasources.download(ds_id)
+    print(f"\nDownloaded the file to {file_path}.")
+    return file_path
