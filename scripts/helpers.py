@@ -33,13 +33,13 @@ def _check_status(server_response, success_code):
     return
 
 
-def sign_in(data, username, password):
+def sign_in(username, password, server_url, site_name, is_site_default):
     """
     Funcrion Description
     """
     tableau_auth = TSC.TableauAuth(
-        username, password, None if data['is_site_default'] else data['site_name'])
-    server = TSC.Server(data['server_url'], use_server_version=True)
+        username, password, None if is_site_default else site_name)
+    server = TSC.Server(server_url, use_server_version=True)
     server.auth.sign_in(tableau_auth)
     server_response = vars(server)
     auth_token = server_response.get('_auth_token')
@@ -81,14 +81,14 @@ def get_user_id(server, permission_user_name):
     return user_id_list
 
 
-def get_ds_id(server, ds):
+def get_ds_id(server, ds_name, ds_project_name):
     """
     Funcrion Description
     """
     all_datasources, pagination_item = server.datasources.get()
 
     ds_id_list = [
-        datasource.id for datasource in all_datasources if datasource.name == ds['ds_name'] and datasource._project_name == ds['get_ds_project_name']]
+        datasource.id for datasource in all_datasources if datasource.name == ds_name and datasource._project_name == ds_project_name]
     return ds_id_list
 
 
@@ -99,3 +99,16 @@ def dl_ds(server, ds_id):
     file_path = server.datasources.download(ds_id)
     print(f"\nDownloaded the file to {file_path}.")
     return file_path
+
+
+def ds_refresh(server, ds_name, ds_project_name):
+    """
+    Funcrion Description
+    """
+    ds_id = get_ds_id(server, ds_name, ds_project_name)[0]
+
+    datasource = server.datasources.get_by_id(ds_id)
+
+    # call the refresh method with the data source item
+    refreshed_datasource = server.datasources.refresh(datasource)
+    print(f"Datasource {ds_name} refresh successfully.")
