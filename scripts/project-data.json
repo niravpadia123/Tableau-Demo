@@ -1,26 +1,26 @@
 {
   "workbooks": [
     {
-      "is_wb_publish": false,
+      "is_wb_publish": true,
       "server_url": "https://tableau.devinvh.com/",
       "site_name": "Enterprise",
-      "wb_name": "",
+      "wb_name": "op sales",
       "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "",
-      "project_path": "",
-      "tags": [],
+      "file_path": "op sales.twb",
+      "project_path": "Operations",
+      "tags": ["wb"],
       "hidden_views": [],
-      "show_tabs": false,
+      "show_tabs": true,
       "is_site_default": true,
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasource": {
-        "ds_name": "Sample - Superstore",
-        "get_ds_project_name": "Technology",
-        "publish_ds_project_name": "Operations",
-        "get_ds_server_url": "https://tableau.devinvh.com/",
-        "publish_ds_server_url": "https://tableau.devinvh.com/"
+        "ds_name": "",
+        "get_ds_project_name": "",
+        "publish_ds_project_name": "",
+        "get_ds_server_url": "",
+        "publish_ds_server_url": ""
       },
-      "is_wb_permissions_update": false,
+      "is_wb_permissions_update": true,
       "permissions": [
         {
           "permission_group_name": "",
