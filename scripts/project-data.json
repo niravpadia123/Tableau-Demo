@@ -2,23 +2,25 @@
   "workbooks": [
     {
       "is_wb_publish": true,
-      "server_url": "https://tableau.devinvh.com/",
-      "site_name": "Enterprise",
-      "wb_name": "op sales",
-      "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-      "file_path": "op sales.twb",
-      "project_path": "Operations",
-      "tags": ["wb"],
+      "server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
+      "site_name": "DataLabs",
+      "wb_name": "Forecast 2022.1",
+      "site_id": "55239ed7-57b4-4b10-b269-b2b5fe71f280",
+      "file_path": "Forecast 2022.1.twbx",
+      "project_path": "Development",
+      "tags": [],
       "hidden_views": [],
       "show_tabs": true,
       "is_site_default": true,
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasource": {
-        "ds_name": "",
-        "get_ds_project_name": "",
-        "publish_ds_project_name": "",
-        "get_ds_server_url": "",
-        "publish_ds_server_url": ""
+        "ds_name": "Sample - Superstore",
+        "get_ds_server_url": "https://tableau.devinvh.com/",
+        "get_ds_project_name": "Technology",
+        "publish_ds_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
+        "publish_ds_project_name": "Development",
+        "publish_ds_site_name": "DataLabs",
+        "is_site_default": false
       },
       "is_wb_permissions_update": true,
       "permissions": [
@@ -26,7 +28,7 @@
           "permission_group_name": "",
           "permission_user_name": "Nirav.Padia",
           "permission_template": {
-            "Read": "Allow",
+            "Read": "Deny",
             "Filter": "Deny",
             "ViewComments": "Deny",
             "AddComment": "Deny",

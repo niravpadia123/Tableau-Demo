@@ -20,7 +20,7 @@ def main(arguments):
     for _ in range(int(workbook_iteration)):
         for workbook in wb_list[iter_split_start:iter_split_end]:
             process = multiprocessing.Process(
-                target=temp_func, args=(workbook, arguments.username, arguments.password))
+                target=temp_func, args=(workbook, arguments.username, arguments.password, arguments.produsername, arguments.prodpassword))
             jobs.append(process)
 
         for job in jobs:
@@ -38,6 +38,10 @@ if __name__ == '__main__':
     parser.add_argument('--username', action='store',
                         type=str, required=True)
     parser.add_argument('--password', action='store',
+                        type=str, required=True)
+    parser.add_argument('--produsername', action='store',
+                        type=str, required=True)
+    parser.add_argument('--prodpassword', action='store',
                         type=str, required=True)
     parser.add_argument('--project_data', action='store',
                         type=str, required=True)

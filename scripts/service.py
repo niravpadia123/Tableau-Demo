@@ -7,7 +7,7 @@ from helpers import sign_in, get_group_id, get_user_id, get_ds_id, dl_ds, ds_ref
 from permissions import query_permission, add_permission, delete_permission
 
 
-def temp_func(data, username, password):
+def temp_func(data, username, password, prod_username, prod_password):
     """
     Funcrion Description
     """
@@ -101,7 +101,8 @@ def temp_func(data, username, password):
 
             # Step: Sign In to the Tableau Server
             server, auth_token, version = sign_in(
-                username, password, data['datasource']['publish_ds_server_url'], '', True)
+                prod_username, prod_password, data['datasource']['publish_ds_server_url'],
+                data['datasource']['publish_ds_site_name'], data['datasource']['is_site_default'])
 
             # Publish Datasource
             ds_id = publish_ds(server, data, dl_ds_file_path)
