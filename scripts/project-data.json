@@ -2,25 +2,19 @@
   "workbooks": [
     {
       "is_wb_publish": true,
-      "server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "site_name": "DataLabs",
-      "wb_name": "Forecast 2022.3",
-      "site_id": "55239ed7-57b4-4b10-b269-b2b5fe71f280",
-      "file_path": "Forecast 2022.3.twbx",
-      "project_path": "Development",
-      "tags": ["new"],
-      "hidden_views": [],
-      "show_tabs": true,
-      "is_site_default": false,
-      "is_datasource_update": false,
-      "datasource": {
-        "ds_name": "Sample - Superstore",
-        "get_ds_server_url": "https://tableau.devinvh.com/",
-        "get_ds_project_name": "Technology",
-        "publish_ds_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-        "publish_ds_project_name": "Development",
-        "publish_ds_site_name": "DataLabs",
-        "is_site_default": false
+      "dev_server_url": "https://tableau.devinvh.com/",
+      "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
+      "publish_wb_data": {
+        "site_id": "55239ed7-57b4-4b10-b269-b2b5fe71f280",
+        "server_name": "prod",
+        "site_name": "DataLabs",
+        "wb_name": "Forecast 2022.2",
+        "file_path": "Forecast 2022.2.twbx",
+        "project_path": "Development",
+        "tags": [],
+        "hidden_views": [],
+        "is_site_default": false,
+        "show_tabs": true
       },
       "is_wb_permissions_update": false,
       "permissions": [
@@ -36,7 +30,7 @@
             "ExportData": "Deny",
             "RunExplainData": "Deny",
             "ShareView": "Deny",
-            "ViewUnderlyingData": "Deny",                    
+            "ViewUnderlyingData": "Deny",
             "WebAuthoring": "Deny",
             "ExportXml": "Deny",
             "Write": "Deny",
@@ -46,7 +40,23 @@
             "ChangePermissions": "Deny"
           }
         }
-      ]
+      ],
+      "is_datasource_update": false,
+      "datasource": {
+        "ds_name": "Sample - Superstore",
+        "get_ds_data": {
+          "get_ds_server_name": "dev",
+          "get_ds_project_name": "Technology",
+          "get_ds_site_name": "Enterprise",
+          "is_site_default": true
+        },
+        "publish_ds_data": {
+          "publish_ds_server_name": "prod",
+          "publish_ds_project_name": "Development",
+          "publish_ds_site_name": "DataLabs",
+          "is_site_default": false
+        }
+      }
     }
   ]
 }
