@@ -106,6 +106,7 @@ def ds_refresh(server, ds_name, ds_project_name):
     Funcrion Description
     """
     ds_id = get_ds_id(server, ds_name, ds_project_name)[0]
+    print("ds_id 1 ::", ds_id)
 
     datasource = server.datasources.get_by_id(ds_id)
 
