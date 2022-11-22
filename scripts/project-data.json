@@ -5,18 +5,18 @@
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "publish_wb_data": {
-        "site_id": "55239ed7-57b4-4b10-b269-b2b5fe71f280",
-        "server_name": "prod",
-        "site_name": "DataLabs",
-        "wb_name": "Forecast 2022.2",
-        "file_path": "Forecast 2022.2.twbx",
-        "project_path": "Development",
+        "site_id": "",
+        "server_name": "",
+        "site_name": "",
+        "wb_name": "",
+        "file_path": "",
+        "project_path": "",
         "tags": [],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
       },
-      "is_wb_permissions_update": true,
+      "is_wb_permissions_update": false,
       "permissions": [
         {
           "permission_group_name": "",
@@ -41,7 +41,7 @@
           }
         }
       ],
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasource": {
         "ds_name": "Sample - Superstore",
         "get_ds_data": {
