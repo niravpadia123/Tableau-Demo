@@ -16,7 +16,7 @@
         "is_site_default": false,
         "show_tabs": true
       },
-      "is_wb_permissions_update": false,
+      "is_wb_permissions_update": true,
       "permissions": [
         {
           "permission_group_name": "",
@@ -30,7 +30,7 @@
             "ExportData": "Deny",
             "RunExplainData": "Deny",
             "ShareView": "Deny",
-            "ViewUnderlyingData": "Deny",
+            "ViewUnderlyingData": "Deny",                    
             "WebAuthoring": "Deny",
             "ExportXml": "Deny",
             "Write": "Deny",
