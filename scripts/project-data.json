@@ -8,11 +8,11 @@
       "site_id": "55239ed7-57b4-4b10-b269-b2b5fe71f280",
       "file_path": "Forecast 2022.1.twbx",
       "project_path": "Development",
-      "tags": ["new"],
+      "tags": ["newd"],
       "hidden_views": [],
       "show_tabs": true,
       "is_site_default": false,
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasource": {
         "ds_name": "Sample - Superstore",
         "get_ds_server_url": "https://tableau.devinvh.com/",
