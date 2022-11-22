@@ -101,15 +101,12 @@ def dl_ds(server, ds_id):
     return file_path
 
 
-def ds_refresh(server, ds_name, ds_project_name):
+def ds_refresh(server, ds_name, ds_id):
     """
     Funcrion Description
     """
-    ds_id = get_ds_id(server, ds_name, ds_project_name)[0]
-    print("ds_id 1 ::", ds_id)
-
     datasource = server.datasources.get_by_id(ds_id)
 
     # call the refresh method with the data source item
-    refreshed_datasource = server.datasources.refresh(datasource)
+    server.datasources.refresh(datasource)
     print(f"Datasource {ds_name} refresh successfully.")

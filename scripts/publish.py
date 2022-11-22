@@ -15,7 +15,7 @@ def publish_wb(server, data):
         '/', 1)[0] + "/workbooks/" + data['file_path']
 
     new_workbook = TSC.WorkbookItem(
-        name=data['name'], project_id=project_id, show_tabs=data['show_tabs'])
+        name=data['wb_name'], project_id=project_id, show_tabs=data['show_tabs'])
     new_workbook = server.workbooks.publish(
         new_workbook, wb_path, "Overwrite", hidden_views=data['hidden_views']
         if len(data['hidden_views']) > 0 else None)
@@ -48,3 +48,5 @@ def publish_ds(server, data, dl_ds_file_path):
 
     print(
         f"\nSuccessfully published {data['datasource']['ds_name']} datasource in {data['datasource']['publish_ds_project_name']} in {data['site_name']} site.")
+
+    return new_datasource._id
