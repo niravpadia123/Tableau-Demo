@@ -6,7 +6,7 @@
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "publish_wb_data": {
         "site_id": "55239ed7-57b4-4b10-b269-b2b5fe71f280",
-        "server_name": "prod",
+        "server_name": "dev",
         "site_name": "DataLabs",
         "wb_name": "DT new Packaged multi v1",
         "file_path": "DT new Packaged multi v1.twb",
@@ -16,7 +16,7 @@
         "is_site_default": false,
         "show_tabs": true
       },
-      "is_wb_permissions_update": false,
+      "is_wb_permissions_update": true,
       "permissions": [
         {
           "permission_group_name": "",
@@ -41,19 +41,19 @@
           }
         }
       ],
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasource": {
         "ds_name": "Disposition Tracker DS",
         "get_ds_data": {
-          "get_ds_server_name": "dev",
-          "get_ds_project_name": "Online",
-          "get_ds_site_name": "Enterprise",
+          "get_ds_server_name": "prod",
+          "get_ds_project_name": "Development",
+          "get_ds_site_name": "DataLabs",
           "is_site_default": true
         },
         "publish_ds_data": {
-          "publish_ds_server_name": "prod",
+          "publish_ds_server_name": "dev",
           "publish_ds_project_name": "Development",
-          "publish_ds_site_name": "DataLabs",
+          "publish_ds_site_name": "Enterprise",
           "is_site_default": false
         }
       }
