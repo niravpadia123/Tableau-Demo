@@ -1,17 +1,17 @@
 {
   "workbooks": [
     {
-      "is_wb_publish": false,
+      "is_wb_publish": true,
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "publish_wb_data": {
-        "site_id": "",
-        "server_name": "",
-        "site_name": "",
-        "wb_name": "",
-        "file_path": "",
-        "project_path": "",
-        "tags": [],
+        "site_id": "55239ed7-57b4-4b10-b269-b2b5fe71f280",
+        "server_name": "prod",
+        "site_name": "DataLabs",
+        "wb_name": "DT new Packaged multi v1",
+        "file_path": "DT new Packaged multi v1.twb",
+        "project_path": "Development",
+        "tags": ["DT"],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
@@ -41,7 +41,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasource": {
         "ds_name": "Disposition Tracker DS",
         "get_ds_data": {
