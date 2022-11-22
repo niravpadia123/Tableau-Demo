@@ -13,12 +13,7 @@ def temp_func(data, username, password, prod_username, prod_password):
     """
     # Step: Sign In to the Tableau Server
     server, auth_token, version = sign_in(
-        prod_username, prod_password, data['server_url'], data['site_name'], data['is_site_default'])
-
-    all_sites, pagination_item = server.sites.get()
-    # print all the site names and ids
-    for site in all_sites:       
-        print(site.id, site.name, site.content_url, site.state)
+        username, password, data['server_url'], data['site_name'], data['is_site_default'])
 
     # Publish Workbook Part
     try:
