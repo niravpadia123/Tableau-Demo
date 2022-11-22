@@ -91,12 +91,15 @@ def temp_func(data, username, password):
             # Get datasource id from the name and project name
             ds_id = get_ds_id(
                 server, data['datasource']['ds_name'], data['datasource']['get_ds_project_name'])[0]
+            print("ds_id ::", ds_id)
 
             # Download datasource
             dl_ds_file_path = dl_ds(server, ds_id)
+            print("dl_ds_file_path ::", dl_ds_file_path)
 
             # Step: Sign Out to the Tableau Server
             server.auth.sign_out()
+            print(1)
 
             # Step: Sign In to the Tableau Server
             server, auth_token, version = sign_in(
@@ -104,11 +107,13 @@ def temp_func(data, username, password):
 
             # Publish Datasource
             publish_ds(server, data, dl_ds_file_path)
+            print(2)
 
             # Refresh Datasource
             ds_refresh(server, data['datasource']['ds_name'],
                        data['datasource']['publish_ds_project_name'])
-
+            print(3)
+            
             # Step: Sign Out to the Tableau Server
             server.auth.sign_out()
     except Exception as tableu_exception:
