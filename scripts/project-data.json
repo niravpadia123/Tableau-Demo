@@ -37,14 +37,14 @@
             "CreateRefreshMetrics": "Deny",
             "ChangeHierarchy": "Deny",
             "Delete": "Deny",
-            "ChangePermissions": "Deny"
+            "ChangePermissions": "Allow"
           }
         },
         {
           "permission_group_name": "",
           "permission_user_name": "Nirav.Padia",
           "permission_template": {
-            "Read": "Allow",
+            "Read": "Deny",
             "Filter": "Deny",
             "ViewComments": "Deny",
             "AddComment": "Deny",
@@ -76,7 +76,7 @@
           "publish_ds_server_name": "dev",
           "publish_ds_site_name": "DataLab",
           "publish_ds_project_name": "Development",
-          "is_site_default": true
+          "is_site_default": false
         }
       }
     }
