@@ -1,23 +1,45 @@
 {
   "workbooks": [
     {
-      "is_wb_publish": true,
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
+      "is_wb_publish": true,
       "publish_wb_data": {
-        "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "server_name": "dev",
+        "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "site_name": "DataLab",
-        "wb_name": "Superstore _Profitability_Overview",
-        "file_path": "Superstore _Profitability_Overview.twb",
-        "project_path": "Development",
-        "tags": ["DT new"],
+        "project_path": "Technology",
+        "wb_name": "Forecast 2022.1",
+        "file_path": "Forecast 2022.1.twbx",
+        "tags": [],
         "hidden_views": [],
         "is_site_default": false,
-        "show_tabs": true
+        "show_tabs": false
       },
       "is_wb_permissions_update": true,
       "permissions": [
+        {
+          "permission_group_name": "All Users",
+          "permission_user_name": "",
+          "permission_template": {
+            "Read": "Deny",
+            "Filter": "Deny",
+            "ViewComments": "Deny",
+            "AddComment": "Deny",
+            "ExportImage": "Deny",
+            "ExportData": "Deny",
+            "RunExplainData": "Deny",
+            "ShareView": "Deny",
+            "ViewUnderlyingData": "Deny",                    
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Deny",
+            "ChangeHierarchy": "Deny",
+            "Delete": "Deny",
+            "ChangePermissions": "Deny"
+          }
+        },
         {
           "permission_group_name": "",
           "permission_user_name": "Nirav.Padia",
@@ -46,15 +68,15 @@
         "ds_name": "Disposition Tracker DS",
         "get_ds_data": {
           "get_ds_server_name": "prod",
-          "get_ds_project_name": "Development",
           "get_ds_site_name": "DataLabs",
+          "get_ds_project_name": "Development",
           "is_site_default": false
         },
         "publish_ds_data": {
           "publish_ds_server_name": "dev",
-          "publish_ds_project_name": "Development",
-          "publish_ds_site_name": "DataLab",
-          "is_site_default": false
+          "publish_ds_site_name": "Enterprise",
+          "publish_ds_project_name": "Technology",
+          "is_site_default": true
         }
       }
     }

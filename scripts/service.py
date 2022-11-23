@@ -1,6 +1,7 @@
 """
 Neccessory Module imports
 """
+import sys
 import logging
 from publish import publish_wb, publish_ds
 from helpers import sign_in, get_group_id, get_user_id, get_ds_id, dl_ds, ds_refresh
@@ -12,12 +13,14 @@ def temp_func(data, username, password, prod_username, prod_password):
     Funcrion Description
     """
     # Step: Sign In to the Tableau Server
+    if data['publish_wb_data']['server_name'] == "dev":
+        uname, pname, surl = username, password, data['dev_server_url']
+    elif data['publish_wb_data']['server_name'] == "prod":
+        uname, pname, surl = prod_username, prod_password, data['prod_server_url']
+
     server, auth_token, version = sign_in(
-        username if data['publish_wb_data']['server_name'] == "dev" else prod_username,
-        password if data['publish_wb_data']['server_name'] == "dev" else prod_password,
-        data['dev_server_url'] if data['publish_wb_data']['server_name'] == "dev" else data['prod_server_url'],
-        data['publish_wb_data']['site_name'],
-        data['publish_wb_data']['is_site_default']
+        uname, pname, surl, data['publish_wb_data'][
+            'site_name'], data['publish_wb_data']['is_site_default']
     )
 
     # Publish Workbook Part
@@ -50,14 +53,15 @@ def temp_func(data, username, password, prod_username, prod_password):
 
                 # get permissions of specific workbook
                 user_permissions = query_permission(
-                    data, wb_id, permission_user_or_group_id,
-                    version, auth_token, is_group)
+                    surl, version, data['publish_wb_data']['site_id'],
+                    wb_id, auth_token, permission_user_or_group_id, is_group
+                )
 
                 for permission_name, permission_mode in \
                         permission_data['permission_template'].items():
                     if user_permissions is None:
                         add_permission(
-                            data, wb_id, permission_user_or_group_id, version,
+                            surl, data['publish_wb_data']['site_id'], wb_id, permission_user_or_group_id, version,
                             auth_token, permission_name, permission_mode, is_group)
                         print(
                             f"\tPermission {permission_name} is set to {permission_mode} Successfully in {wb_id}\n")
@@ -69,14 +73,14 @@ def temp_func(data, username, password, prod_username, prod_password):
                                     'mode')
 
                                 delete_permission(
-                                    data, auth_token, wb_id,
+                                    surl, data['publish_wb_data']['site_id'], auth_token, wb_id,
                                     permission_user_or_group_id, permission_name,
                                     existing_mode, version, is_group)
                                 print(
                                     f"\tPermission {permission_name} : {existing_mode} is deleted Successfully in {wb_id}\n")
 
                                 add_permission(
-                                    data, wb_id, permission_user_or_group_id,
+                                    surl, data['publish_wb_data']['site_id'], wb_id, permission_user_or_group_id,
                                     version, auth_token, permission_name,
                                     permission_mode, is_group)
                                 print(
@@ -93,17 +97,21 @@ def temp_func(data, username, password, prod_username, prod_password):
     try:
         if data['is_datasource_update']:
             # Step: Sign In to the Tableau Server
+            if data['datasource']['get_ds_data']['get_ds_server_name'] == "dev":
+                uname, pname, surl = username, password, data['dev_server_url']
+            elif data['datasource']['get_ds_data']['get_ds_server_name'] == "prod":
+                uname, pname, surl = prod_username, prod_password, data['prod_server_url']
+
             server, auth_token, version = sign_in(
-                username if data['datasource']['get_ds_data']['get_ds_server_name'] == "dev" else prod_username,
-                password if data['datasource']['get_ds_data']['get_ds_server_name'] == "dev" else prod_password,
-                data['dev_server_url'] if data['datasource']['get_ds_data']['get_ds_server_name'] == "dev" else data['prod_server_url'],
-                '' if data['datasource']['get_ds_data']['is_site_default'] else data['datasource']['get_ds_data']['get_ds_site_name'],
+                uname, pname, surl,
+                data['datasource']['get_ds_data']['get_ds_site_name'],
                 data['datasource']['get_ds_data']['is_site_default']
             )
 
             # Get datasource id from the name and project name
             ds_id = get_ds_id(
-                server, data['datasource']['ds_name'], data['datasource']['get_ds_data']['get_ds_project_name'])[0]
+                server, data['datasource']['ds_name'],
+                data['datasource']['get_ds_data']['get_ds_project_name'])[0]
 
             # Download datasource
             dl_ds_file_path = dl_ds(server, ds_id)
@@ -112,11 +120,14 @@ def temp_func(data, username, password, prod_username, prod_password):
             server.auth.sign_out()
 
             # Step: Sign In to the Tableau Server
+            if data['datasource']['publish_ds_data']['publish_ds_server_name'] == "dev":
+                uname, pname, surl = username, password, data['dev_server_url']
+            elif data['datasource']['publish_ds_data']['publish_ds_server_name'] == "prod":
+                uname, pname, surl = prod_username, prod_password, data['prod_server_url']
+
             server, auth_token, version = sign_in(
-                username if data['datasource']['publish_ds_data']['publish_ds_server_name'] == "dev" else prod_username,
-                password if data['datasource']['publish_ds_data']['publish_ds_server_name'] == "dev" else prod_password,
-                data['dev_server_url'] if data['datasource']['publish_ds_data']['publish_ds_server_name'] == "dev" else data['prod_server_url'],
-                '' if data['datasource']['publish_ds_data']['is_site_default'] else data['datasource']['publish_ds_data']['publish_ds_site_name'],
+                uname, pname, surl,
+                data['datasource']['publish_ds_data']['publish_ds_site_name'],
                 data['datasource']['publish_ds_data']['is_site_default']
             )
 

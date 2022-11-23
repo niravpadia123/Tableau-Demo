@@ -7,12 +7,11 @@ import requests
 xmlns = {'t': 'http://tableau.com/api'}
 
 
-def query_permission(data, wb_id, permission_user_or_group_id,
-                     version, auth_token, is_group):
+def query_permission(server_url, version, site_id, wb_id, auth_token, permission_user_or_group_id, is_group):
     """
     Funcrion Description
     """
-    url = f"{data['server_url']}api/{version}/sites/{data['site_id']}/workbooks/{wb_id}/permissions"
+    url = f"{server_url}api/{version}/sites/{site_id}/workbooks/{wb_id}/permissions"
 
     server_response = requests.get(
         url, headers={'x-tableau-auth': auth_token}, timeout=5000)
@@ -34,12 +33,12 @@ def query_permission(data, wb_id, permission_user_or_group_id,
                 return capability.findall('.//t:capability', namespaces=xmlns)
 
 
-def add_permission(data, wb_id, permission_user_or_group_id, version,
+def add_permission(server_url, site_id, wb_id, permission_user_or_group_id, version,
                    auth_token, permission_name, permission_mode, is_group):
     """
     Funcrion Description
     """
-    url = f"{data['server_url']}api/{version}/sites/{data['site_id']}/workbooks/{wb_id}/permissions"
+    url = f"{server_url}api/{version}/sites/{site_id}/workbooks/{wb_id}/permissions"
 
     xml_request = ET.Element('tsRequest')
     permissions_element = ET.SubElement(xml_request, 'permissions')
@@ -61,7 +60,7 @@ def add_permission(data, wb_id, permission_user_or_group_id, version,
     _check_status(server_request, 200)
 
 
-def delete_permission(data, auth_token, wb_id, permission_user_or_group_id,
+def delete_permission(server_url, site_id, auth_token, wb_id, permission_user_or_group_id,
                       permission_name, existing_mode, version, is_group):
     """
     Funcrion Description
@@ -71,7 +70,7 @@ def delete_permission(data, auth_token, wb_id, permission_user_or_group_id,
     else:
         group_or_user = "users"
 
-    url = f"{data['server_url']}api/{version}/sites/{data['site_id']}/workbooks/{wb_id}/permissions/{group_or_user}/{permission_user_or_group_id}/{permission_name}/{existing_mode}"
+    url = f"{server_url}api/{version}/sites/{site_id}/workbooks/{wb_id}/permissions/{group_or_user}/{permission_user_or_group_id}/{permission_name}/{existing_mode}"
 
     server_response = requests.delete(
         url, headers={'x-tableau-auth': auth_token},
