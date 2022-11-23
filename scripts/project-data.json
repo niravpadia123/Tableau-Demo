@@ -31,7 +31,7 @@
             "RunExplainData": "Deny",
             "ShareView": "Deny",
             "ViewUnderlyingData": "Deny",                    
-            "WebAuthoring": "Allow",
+            "WebAuthoring": "Deny",
             "ExportXml": "Deny",
             "Write": "Deny",
             "CreateRefreshMetrics": "Deny",
@@ -44,14 +44,14 @@
           "permission_group_name": "",
           "permission_user_name": "Nirav.Padia",
           "permission_template": {
-            "Read": "Deny",
-            "Filter": "Deny",
-            "ViewComments": "Deny",
-            "AddComment": "Deny",
-            "ExportImage": "Deny",
-            "ExportData": "Deny",
-            "RunExplainData": "Deny",
-            "ShareView": "Deny",
+            "Read": "Allow",
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Allow",
+            "RunExplainData": "Allow",
+            "ShareView": "Allow",
             "ViewUnderlyingData": "Deny",                    
             "WebAuthoring": "Deny",
             "ExportXml": "Deny",
@@ -63,7 +63,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasource": {
         "ds_name": "Disposition Tracker DS",
         "get_ds_data": {
