@@ -57,9 +57,9 @@
             "ExportXml": "Allow",
             "Write": "Allow",
             "CreateRefreshMetrics": "Allow",
-            "ChangeHierarchy": "Deny",
-            "Delete": "Deny",
-            "ChangePermissions": "Deny"
+            "ChangeHierarchy": "Allow",
+            "Delete": "Allow",
+            "ChangePermissions": "Allow"
           }
         }
       ],

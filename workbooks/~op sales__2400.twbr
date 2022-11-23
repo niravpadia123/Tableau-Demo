@@ -640,34 +640,34 @@
       </overridable-settings>
       <aliases enabled='yes' />
       <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Category]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[City]' pivot='key' role='dimension' semantic-role='[City].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Country/Region]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Customer ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Customer Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[Discount]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
-      <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[Order Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Order ID (Returns)]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Order ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Person]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Sum' datatype='integer' default-format='*00000' default-type='ordinal' layered='true' name='[Postal Code]' pivot='key' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' user-datatype='integer' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Product ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Product Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[City]' pivot='key' role='dimension' semantic-role='[City].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Country/Region]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Customer ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Customer Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' hidden='true' layered='true' name='[Discount]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Year' datatype='date' default-type='ordinal' hidden='true' layered='true' name='[Order Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Order ID (Returns)]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Order ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Person]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' default-type='ordinal' hidden='true' layered='true' name='[Postal Code]' pivot='key' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Product ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Product Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[Profit]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
-      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Quantity]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Region (People)]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Returned]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Count' datatype='integer' default-type='ordinal' layered='true' name='[Row ID]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
-      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[Sales]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Segment]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[Ship Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
-      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Ship Mode]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' hidden='true' layered='true' name='[Quantity]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Region (People)]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Returned]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='integer' default-type='ordinal' hidden='true' layered='true' name='[Row ID]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' hidden='true' layered='true' name='[Sales]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Segment]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Year' datatype='date' default-type='ordinal' hidden='true' layered='true' name='[Ship Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' hidden='true' layered='true' name='[Ship Mode]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[State]' pivot='key' role='dimension' semantic-role='[State].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Sub-Category]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
-      <_.fcp.ObjectModelTableType.true...column aggregation='Count' caption='Orders' datatype='table' default-type='quantitative' layered='true' name='[__tableau_internal_object_id__].[Orders_9F042AC96C394EC8B70DF66FCA45CBDD]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
-      <_.fcp.ObjectModelTableType.true...column aggregation='Count' caption='People' datatype='table' default-type='quantitative' layered='true' name='[__tableau_internal_object_id__].[People_C31BE7D39F89472CAF16FEC47BC78D0D]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
-      <_.fcp.ObjectModelTableType.true...column aggregation='Count' caption='Returns' datatype='table' default-type='quantitative' layered='true' name='[__tableau_internal_object_id__].[Returns_48C5BF625A8742C395BE08A8A7D71FEC]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <_.fcp.ObjectModelTableType.true...column aggregation='Count' caption='Orders' datatype='table' default-type='quantitative' hidden='true' layered='true' name='[__tableau_internal_object_id__].[Orders_9F042AC96C394EC8B70DF66FCA45CBDD]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
+      <_.fcp.ObjectModelTableType.true...column aggregation='Count' caption='People' datatype='table' default-type='quantitative' hidden='true' layered='true' name='[__tableau_internal_object_id__].[People_C31BE7D39F89472CAF16FEC47BC78D0D]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
+      <_.fcp.ObjectModelTableType.true...column aggregation='Count' caption='Returns' datatype='table' default-type='quantitative' hidden='true' layered='true' name='[__tableau_internal_object_id__].[Returns_48C5BF625A8742C395BE08A8A7D71FEC]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-hidden-fields='true' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
       </semantic-values>
@@ -884,7 +884,7 @@
     </dashboard>
   </dashboards>
   <windows saved-dpi-scale-factor='1.5' source-height='44'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' name='Sheet 1'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -930,7 +930,7 @@
       </cards>
       <simple-id uuid='{D26B0AD5-8BBD-4FC0-8F63-4B3E662815B2}' />
     </window>
-    <window class='dashboard' name='Dashboard 1'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Sheet 1' />
         <viewpoint name='Sheet 1 (2)' />
