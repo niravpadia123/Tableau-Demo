@@ -20,7 +20,7 @@
       "permissions": [
         {
           "permission_group_name": "",
-          "permission_user_name": "anubuti.agrawal",
+          "permission_user_name": "anubhuti.agrawal",
           "permission_template": {
             "Read": "Deny",
             "Filter": "Deny",
