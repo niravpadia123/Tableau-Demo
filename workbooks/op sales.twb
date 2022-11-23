@@ -27,8 +27,8 @@
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
     <datasource caption='Sample - Superstore | Project : Development' inline='true' name='sqlproxy.0ns97je0xrwhwk0zvitim0z4n6x1' version='18.1'>
-      <repository-location derived-from='https://tableau.devinvh.com/datasources/Sample-Superstore?rev=2.0' id='Sample-Superstore_16692010779880' path='/t/DataLab/datasources' revision='1.0' site='DataLab' />
-      <connection channel='https' class='sqlproxy' dbname='Sample-Superstore_16692010779880' directory='/dataserver' port='443' server='tableau.devinvh.com' server-ds-friendly-name='Sample - Superstore | Project : Development' username=''>
+      <repository-location derived-from='https://tableau.devinvh.com/t/DataLab/datasources/Sample-Superstore_16692010779880?rev=1.0' id='Sample-Superstore' path='/t/DataLabs/datasources' revision='1.0' site='DataLabs' />
+      <connection channel='http' class='sqlproxy' dbname='Sample-Superstore' directory='/dataserver' port='80' server='tableau-alb-316754542.us-east-1.elb.amazonaws.com' server-ds-friendly-name='Sample - Superstore | Project : Development' username=''>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
         <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
           <relation name='sqlproxy' table='[sqlproxy]' type='table' />
@@ -526,15 +526,15 @@
               <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
               <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
 
-<datasource :source-version='18.1' formatted-name='federated.0ezu4u10i11j8l1dliii41dvt78g' inline='true' version='18.1' xml:base='https://tableau.devinvh.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<datasource :source-version='18.1' formatted-name='federated.0ezu4u10i11j8l1dliii41dvt78g' inline='true' version='18.1' xml:base='http://tableau-alb-316754542.us-east-1.elb.amazonaws.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
     <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
   </document-format-change-manifest>
-  <repository-location derived-from='https://tableau.devinvh.com/datasources/Sample-Superstore?rev=2.0' id='Sample-Superstore_16692010779880' path='/t/DataLab/datasources' revision='1.0' site='DataLab' />
-  <connection channel='https' class='sqlproxy' dbname='Sample-Superstore_16692010779880' directory='/dataserver' port='443' server='tableau.devinvh.com'>
+  <repository-location derived-from='https://tableau.devinvh.com/t/DataLab/datasources/Sample-Superstore_16692010779880?rev=1.0' id='Sample-Superstore' path='/t/DataLabs/datasources' revision='1.0' site='DataLabs' />
+  <connection channel='http' class='sqlproxy' dbname='Sample-Superstore' directory='/dataserver' port='80' server='tableau-alb-316754542.us-east-1.elb.amazonaws.com'>
     <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
     <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
       <relation name='sqlproxy' table='[sqlproxy]' type='table' />
@@ -849,8 +849,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='18' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Sheet 1' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
