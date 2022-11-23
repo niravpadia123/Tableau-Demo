@@ -5,18 +5,18 @@
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "is_wb_publish": false,
       "publish_wb_data": {
-        "server_name": "prod",
-        "site_id": "55239ed7-57b4-4b10-b269-b2b5fe71f280",
-        "site_name": "DataLabs",
+        "server_name": "dev",
+        "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
+        "site_name": "DataLab",
         "project_path": "Development",
-        "wb_name": "Forecast 2022.1",
-        "file_path": "Forecast 2022.1.twbx",
+        "wb_name": "op sales",
+        "file_path": "op sales.twbx",
         "tags": [],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
       },
-      "is_wb_permissions_update": false,
+      "is_wb_permissions_update": true,
       "permissions": [
         {
           "permission_group_name": "All Users",
@@ -63,7 +63,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasource": {
         "ds_name": "Sample - Superstore",
         "get_ds_data": {

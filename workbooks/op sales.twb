@@ -26,9 +26,9 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
-    <datasource caption='Sample - Superstore' inline='true' name='sqlproxy.0ns97je0xrwhwk0zvitim0z4n6x1' version='18.1'>
-      <repository-location derived-from='https://tableau.devinvh.com/datasources/Sample-Superstore?rev=2.0' id='Sample-Superstore_16691009670360' path='/datasources' revision='1.0' />
-      <connection channel='https' class='sqlproxy' dbname='Sample-Superstore_16691009670360' directory='/dataserver' port='443' server='tableau.devinvh.com' username=''>
+    <datasource caption='Sample - Superstore | Project : Development' inline='true' name='sqlproxy.0ns97je0xrwhwk0zvitim0z4n6x1' version='18.1'>
+      <repository-location derived-from='https://tableau.devinvh.com/datasources/Sample-Superstore?rev=2.0' id='Sample-Superstore_16692010779880' path='/t/DataLab/datasources' revision='1.0' site='DataLab' />
+      <connection channel='https' class='sqlproxy' dbname='Sample-Superstore_16692010779880' directory='/dataserver' port='443' server='tableau.devinvh.com' server-ds-friendly-name='Sample - Superstore | Project : Development' username=''>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
         <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
           <relation name='sqlproxy' table='[sqlproxy]' type='table' />
@@ -533,8 +533,8 @@
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
   </document-format-change-manifest>
-  <repository-location derived-from='https://tableau.devinvh.com/datasources/Sample-Superstore?rev=2.0' id='Sample-Superstore_16691009670360' path='/datasources' revision='1.0' />
-  <connection channel='https' class='sqlproxy' dbname='Sample-Superstore_16691009670360' directory='/dataserver' port='443' server='tableau.devinvh.com'>
+  <repository-location derived-from='https://tableau.devinvh.com/datasources/Sample-Superstore?rev=2.0' id='Sample-Superstore_16692010779880' path='/t/DataLab/datasources' revision='1.0' site='DataLab' />
+  <connection channel='https' class='sqlproxy' dbname='Sample-Superstore_16692010779880' directory='/dataserver' port='443' server='tableau.devinvh.com'>
     <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
     <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
       <relation name='sqlproxy' table='[sqlproxy]' type='table' />
@@ -718,7 +718,7 @@
       <table>
         <view>
           <datasources>
-            <datasource caption='Sample - Superstore' name='sqlproxy.0ns97je0xrwhwk0zvitim0z4n6x1' />
+            <datasource caption='Sample - Superstore | Project : Development' name='sqlproxy.0ns97je0xrwhwk0zvitim0z4n6x1' />
           </datasources>
           <mapsources>
             <mapsource name='Tableau' />
@@ -776,7 +776,7 @@
       <table>
         <view>
           <datasources>
-            <datasource caption='Sample - Superstore' name='sqlproxy.0ns97je0xrwhwk0zvitim0z4n6x1' />
+            <datasource caption='Sample - Superstore | Project : Development' name='sqlproxy.0ns97je0xrwhwk0zvitim0z4n6x1' />
           </datasources>
           <mapsources>
             <mapsource name='Tableau' />
@@ -849,8 +849,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='12' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Sheet 1' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -918,7 +918,7 @@
       </viewpoint>
       <simple-id uuid='{43A23BC9-329F-4A6B-B6ED-13EEB8DAB8CD}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 1 (2)'>
+    <window class='worksheet' name='Sheet 1 (2)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -941,7 +941,7 @@
       </cards>
       <simple-id uuid='{D26B0AD5-8BBD-4FC0-8F63-4B3E662815B2}' />
     </window>
-    <window class='dashboard' name='Dashboard 1'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Sheet 1' />
         <viewpoint name='Sheet 1 (2)' />
