@@ -7,7 +7,7 @@
       "publish_wb_data": {
         "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "server_name": "dev",
-        "site_name": "Enterprise",
+        "site_name": "DataLab",
         "wb_name": "Superstore _Profitability_Overview",
         "file_path": "Superstore _Profitability_Overview.twb",
         "project_path": "Development",
