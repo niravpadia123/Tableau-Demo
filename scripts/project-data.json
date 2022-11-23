@@ -19,8 +19,8 @@
       "is_wb_permissions_update": true,
       "permissions": [
         {
-          "permission_group_name": "All Users",
-          "permission_user_name": "",
+          "permission_group_name": "",
+          "permission_user_name": "anubuti.agrawal",
           "permission_template": {
             "Read": "Deny",
             "Filter": "Deny",
