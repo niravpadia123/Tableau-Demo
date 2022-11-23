@@ -63,7 +63,7 @@
           }
         }
       ],
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasource": {
         "ds_name": "Mpg (TestPBI)",
         "get_ds_data": {
