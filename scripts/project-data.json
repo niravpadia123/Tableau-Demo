@@ -8,7 +8,7 @@
         "server_name": "dev",
         "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "site_name": "DataLab",
-        "project_path": "Technology",
+        "project_path": "Development",
         "wb_name": "Forecast 2022.1",
         "file_path": "Forecast 2022.1.twbx",
         "tags": [],
@@ -19,8 +19,8 @@
       "is_wb_permissions_update": false,
       "permissions": [
         {
-          "permission_group_name": "",
-          "permission_user_name": "anubhuti.agrawal",
+          "permission_group_name": "All Users",
+          "permission_user_name": "",
           "permission_template": {
             "Read": "Deny",
             "Filter": "Deny",
