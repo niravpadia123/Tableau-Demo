@@ -31,7 +31,7 @@
             "RunExplainData": "Deny",
             "ShareView": "Deny",
             "ViewUnderlyingData": "Deny",                    
-            "WebAuthoring": "Deny",
+            "WebAuthoring": "Allow",
             "ExportXml": "Deny",
             "Write": "Deny",
             "CreateRefreshMetrics": "Deny",
@@ -63,7 +63,7 @@
           }
         }
       ],
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasource": {
         "ds_name": "Disposition Tracker DS",
         "get_ds_data": {
@@ -74,8 +74,8 @@
         },
         "publish_ds_data": {
           "publish_ds_server_name": "dev",
-          "publish_ds_site_name": "Enterprise",
-          "publish_ds_project_name": "Technology",
+          "publish_ds_site_name": "DataLab",
+          "publish_ds_project_name": "Development",
           "is_site_default": true
         }
       }
