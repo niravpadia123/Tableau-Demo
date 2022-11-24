@@ -9,8 +9,8 @@
         "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
         "site_name": "Enterprise",
         "project_path": "Technology",
-        "wb_name": "Forecast 2022.2",
-        "file_path": "Forecast 2022.2.twbx",
+        "wb_name": "Forecast 2022.3",
+        "file_path": "Forecast 2022.3.twbx",
         "tags": ["forecast"],
         "hidden_views": [],
         "is_site_default": true,
@@ -75,7 +75,7 @@
         "publish_ds_data": {
           "publish_ds_server_name": "dev",
           "publish_ds_site_name": "DataLab",
-          "publish_ds_project_name": "Development",
+          "publish_ds_project_name": "Test1",
           "is_site_default": false
         }
       }
@@ -88,7 +88,7 @@
         "server_name": "dev",
         "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "site_name": "Datalab",
-        "project_path": "Development",
+        "project_path": "Test1",
         "wb_name": "op sales",
         "file_path": "op sales.twb",
         "tags": [""],
