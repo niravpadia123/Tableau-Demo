@@ -61,7 +61,7 @@ def add_permission(server_url, site_id, wb_id, permission_user_or_group_id, vers
 
 
 def delete_permission(server_url, site_id, auth_token, wb_id, permission_user_or_group_id,
-                      permission_name, existing_mode, version, is_group):
+                      permission_name, existing_permission_mode, version, is_group):
     """
     Funcrion Description
     """
@@ -70,7 +70,7 @@ def delete_permission(server_url, site_id, auth_token, wb_id, permission_user_or
     else:
         group_or_user = "users"
 
-    url = f"{server_url}api/{version}/sites/{site_id}/workbooks/{wb_id}/permissions/{group_or_user}/{permission_user_or_group_id}/{permission_name}/{existing_mode}"
+    url = f"{server_url}api/{version}/sites/{site_id}/workbooks/{wb_id}/permissions/{group_or_user}/{permission_user_or_group_id}/{permission_name}/{existing_permission_mode}"
 
     server_response = requests.delete(
         url, headers={'x-tableau-auth': auth_token},

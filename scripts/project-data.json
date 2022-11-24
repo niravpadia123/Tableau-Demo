@@ -5,22 +5,22 @@
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "is_wb_publish": true,
       "publish_wb_data": {
-        "server_name": "prod",
-        "site_id": "55239ed7-57b4-4b10-b269-b2b5fe71f280",
-        "site_name": "DataLabs",
-        "project_path": "Development",
-        "wb_name": "op sales",
-        "file_path": "op sales.twb",
-        "tags": ["newd"],
+        "server_name": "dev",
+        "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
+        "site_name": "Enterprise",
+        "project_path": "Tech Testing",
+        "wb_name": "Forecast 2022.1",
+        "file_path": "Forecast 2022.1.twbx",
+        "tags": [],
         "hidden_views": [],
-        "is_site_default": false,
+        "is_site_default": true,
         "show_tabs": true
       },
-      "is_wb_permissions_update": false,
+      "is_wb_permissions_update": true,
       "permissions": [
         {
-          "permission_group_name": "All Users",
-          "permission_user_name": "",
+          "permission_group_name": "",
+          "permission_user_name": "Nirav.Padia",
           "permission_template": {
             "Read": "Deny",
             "Filter": "Deny",
@@ -39,44 +39,22 @@
             "Delete": "Deny",
             "ChangePermissions": "Deny"
           }
-        },
-        {
-          "permission_group_name": "",
-          "permission_user_name": "Nirav.Padia",
-          "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Allow",
-            "RunExplainData": "Allow",
-            "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",                    
-            "WebAuthoring": "Allow",
-            "ExportXml": "Allow",
-            "Write": "Allow",
-            "CreateRefreshMetrics": "Allow",
-            "ChangeHierarchy": "Allow",
-            "Delete": "Allow",
-            "ChangePermissions": "Allow"
-          }
         }
       ],
       "is_datasource_update": false,
       "datasource": {
-        "ds_name": "Sample - Superstore",
+        "ds_name": "Disposition Tracker DS",
         "get_ds_data": {
-          "get_ds_server_name": "dev",
-          "get_ds_site_name": "DataLab",
+          "get_ds_server_name": "prod",
+          "get_ds_site_name": "DataLabs",
           "get_ds_project_name": "Development",
           "is_site_default": false
         },
         "publish_ds_data": {
-          "publish_ds_server_name": "prod",
-          "publish_ds_site_name": "DataLabs",
-          "publish_ds_project_name": "Development",
-          "is_site_default": false
+          "publish_ds_server_name": "dev",
+          "publish_ds_site_name": "Enterprise",
+          "publish_ds_project_name": "Technology",
+          "is_site_default": true
         }
       }
     }
