@@ -3,7 +3,7 @@
     {
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": true,
+      "is_wb_publish": false,
       "publish_wb_data": {
         "server_name": "dev",
         "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
@@ -19,12 +19,12 @@
       "is_wb_permissions_update": true,
       "permissions": [
         {
-          "permission_group_name": "",
-          "permission_user_name": "Nirav.Padia",
+          "permission_group_name": "All Users",
+          "permission_user_name": "",
           "permission_template": {
-            "Read": "Deny",
-            "Filter": "Deny",
-            "ViewComments": "Deny",
+            "Read": "Allow",
+            "Filter": "Allow",
+            "ViewComments": "Allow",
             "AddComment": "Deny",
             "ExportImage": "Deny",
             "ExportData": "Deny",
@@ -37,7 +37,29 @@
             "CreateRefreshMetrics": "Deny",
             "ChangeHierarchy": "Deny",
             "Delete": "Deny",
-            "ChangePermissions": "Deny"
+            "ChangePermissions": "Allow"
+          }
+        },
+        {
+          "permission_group_name": "",
+          "permission_user_name": "Nirav.Padia",
+          "permission_template": {
+            "Read": "Allow",
+            "Filter": "Allow",
+            "ViewComments": "Deny",
+            "AddComment": "Deny",
+            "ExportImage": "Deny",
+            "ExportData": "Deny",
+            "RunExplainData": "Deny",
+            "ShareView": "Deny",
+            "ViewUnderlyingData": "Deny",                    
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Allow",
+            "ChangeHierarchy": "Allow",
+            "Delete": "Allow",
+            "ChangePermissions": "Allow"
           }
         }
       ],
