@@ -3,7 +3,7 @@
     {
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": false,
+      "is_wb_publish": true,
       "publish_wb_data": {
         "server_name": "dev",
         "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
