@@ -75,7 +75,7 @@
         "publish_ds_data": {
           "publish_ds_server_name": "dev",
           "publish_ds_site_name": "DataLab",
-          "publish_ds_project_name": "Test1",
+          "publish_ds_project_name": "Development",
           "is_site_default": false
         }
       }
@@ -88,10 +88,10 @@
         "server_name": "dev",
         "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "site_name": "Datalab",
-        "project_path": "Test1",
+        "project_path": "Development",
         "wb_name": "op sales",
         "file_path": "op sales.twb",
-        "tags": [""],
+        "tags": ["sample"],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
