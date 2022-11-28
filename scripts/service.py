@@ -12,15 +12,16 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
     Funcrion Description
     """
     # Step: Sign In to the Tableau Server
-    if data['publish_wb_data']['server_name'] == "dev":
-        uname, pname, surl = username, password, data['dev_server_url']
-    elif data['publish_wb_data']['server_name'] == "prod":
-        uname, pname, surl = prod_username, prod_password, data['prod_server_url']
+    if data['is_wb_publish'] or data['is_wb_permissions_update']:
+        if data['publish_wb_data']['server_name'] == "dev":
+            uname, pname, surl = username, password, data['dev_server_url']
+        elif data['publish_wb_data']['server_name'] == "prod":
+            uname, pname, surl = prod_username, prod_password, data['prod_server_url']
 
-    server, auth_token, version = sign_in(
-        uname, pname, surl, data['publish_wb_data'][
-            'site_name'], data['publish_wb_data']['is_site_default']
-    )
+        server, auth_token, version = sign_in(
+            uname, pname, surl, data['publish_wb_data'][
+                'site_name'], data['publish_wb_data']['is_site_default']
+        )
 
     # Publish Workbook Part
     try:
