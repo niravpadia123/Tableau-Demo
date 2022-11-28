@@ -23,22 +23,14 @@
           "permission_group_name": "All Users",
           "permission_user_name": "",
           "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Allow",
-            "RunExplainData": "Allow",
-            "ShareView": "Allow",
-            "ViewUnderlyingData": "",                    
-            "WebAuthoring": "",
-            "ExportXml": "",
-            "Write": "",
-            "CreateRefreshMetrics": "",
-            "ChangeHierarchy": "",
-            "Delete": "",
-            "ChangePermissions": ""
+            "Read": "Deny",
+            "Filter": "Deny",
+            "ViewComments": "Deny",
+            "AddComment": "Deny",
+            "ExportImage": "Deny",
+            "ExportData": "Deny",
+            "RunExplainData": "Deny",
+            "ShareView": "Deny"
           }
         }
       ],
