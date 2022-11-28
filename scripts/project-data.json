@@ -4,7 +4,7 @@
       "index_id": 0,
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": true,
+      "is_wb_publish": false,
       "publish_wb_data": {
         "server_name": "dev",
         "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
@@ -17,7 +17,7 @@
         "is_site_default": true,
         "show_tabs": true
       },
-      "is_wb_permissions_update": true,
+      "is_wb_permissions_update": false,
       "permissions": [
         {
           "permission_group_name": "All Users",
@@ -64,28 +64,13 @@
           }
         }
       ],
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasources": [
         {
-          "ds_name": "Disposition Tracker DS",
+          "ds_name": "Financial Sample1",
           "get_ds_data": {
             "get_ds_server_name": "dev",
-            "get_ds_site_name": "Enterprise",
-            "get_ds_project_name": "Technology",
-            "is_site_default": true
-          },
-          "publish_ds_data": {
-            "publish_ds_server_name": "prod",
-            "publish_ds_site_name": "DataLabs",
-            "publish_ds_project_name": "Development",
-            "is_site_default": false
-          }
-        },
-        {
-          "ds_name": "Sample - Superstore",
-          "get_ds_data": {
-            "get_ds_server_name": "prod",
-            "get_ds_site_name": "DataLabs",
+            "get_ds_site_name": "DataLab",
             "get_ds_project_name": "Development",
             "is_site_default": false
           },
@@ -94,6 +79,21 @@
             "publish_ds_site_name": "Enterprise",
             "publish_ds_project_name": "Technology",
             "is_site_default": true
+          }
+        },
+        {
+          "ds_name": "Order",
+          "get_ds_data": {
+            "get_ds_server_name": "dev",
+            "get_ds_site_name": "DataLab",
+            "get_ds_project_name": "Development",
+            "is_site_default": false
+          },
+          "publish_ds_data": {
+            "publish_ds_server_name": "prod",
+            "publish_ds_site_name": "DataLabs",
+            "publish_ds_project_name": "Development",
+            "is_site_default": false
           }
         }
       ]
