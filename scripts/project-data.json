@@ -25,20 +25,10 @@
           "permission_template": {
             "Read": "Allow",
             "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Allow",
-            "RunExplainData": "Allow",
-            "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",                    
-            "WebAuthoring": "",
-            "ExportXml": "",
-            "Write": "",
-            "CreateRefreshMetrics": "",
-            "ChangeHierarchy": "",
-            "Delete": "",
-            "ChangePermissions": ""
+            "ViewComments": "Deny",
+            "AddComment": "Deny",
+            "ExportImage": "Deny",
+            "ExportData": "Deny"
           }
         }
       ],
