@@ -6,13 +6,13 @@
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "is_wb_publish": false,
       "publish_wb_data": {
-        "server_name": "dev",
-        "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-        "site_name": "Enterprise",
-        "project_path": "D Working",
-        "wb_name": "DT new Packaged multi v1 dev",
-        "file_path": "DT new Packaged multi v1 dev.twb",
-        "tags": ["profit","new"],
+        "server_name": "",
+        "site_id": "",
+        "site_name": "",
+        "project_path": "",
+        "wb_name": "",
+        "file_path": "",
+        "tags": [],
         "hidden_views": [],
         "is_site_default": true,
         "show_tabs": true
@@ -69,31 +69,16 @@
         {
           "ds_name": "Financial Sample1",
           "get_ds_data": {
-            "get_ds_server_name": "dev",
-            "get_ds_site_name": "DataLab",
+            "get_ds_server_name": "prod",
+            "get_ds_site_name": "DataLabs",
             "get_ds_project_name": "Development",
             "is_site_default": false
           },
           "publish_ds_data": {
             "publish_ds_server_name": "dev",
-            "publish_ds_site_name": "Enterprise",
-            "publish_ds_project_name": "Technology",
+            "publish_ds_site_name": "D Working",
+            "publish_ds_project_name": "Tech Testing",
             "is_site_default": true
-          }
-        },
-        {
-          "ds_name": "Order",
-          "get_ds_data": {
-            "get_ds_server_name": "dev",
-            "get_ds_site_name": "DataLab",
-            "get_ds_project_name": "Development",
-            "is_site_default": false
-          },
-          "publish_ds_data": {
-            "publish_ds_server_name": "prod",
-            "publish_ds_site_name": "DataLabs",
-            "publish_ds_project_name": "Development",
-            "is_site_default": false
           }
         }
       ]
