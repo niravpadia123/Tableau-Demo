@@ -6,17 +6,17 @@
       "is_wb_publish": false,
       "publish_wb_data": {
         "server_name": "dev",
-        "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
-        "site_name": "DataLab",
-        "project_path": "Development",
-        "wb_name": "op sales",
-        "file_path": "op sales.twb",
+        "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
+        "site_name": "Enterprise",
+        "project_path": "D Working",
+        "wb_name": "DT new Packaged multi v1",
+        "file_path": "DT new Packaged multi v1.twb",
         "tags": ["forecast"],
-        "hidden_views": [],
-        "is_site_default": false,
+        "hidden_views": ["forecast"],
+        "is_site_default": true,
         "show_tabs": true
       },
-      "is_wb_permissions_update": false,
+      "is_wb_permissions_update": true,
       "permissions": [
         {
           "permission_group_name": "All Users",
@@ -63,7 +63,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasource": {
         "ds_name": "Disposition Tracker DS",
         "get_ds_data": {
