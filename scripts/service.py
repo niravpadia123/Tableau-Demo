@@ -27,10 +27,10 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
         # Step: Form a new workbook item and publish.
         if data['is_wb_publish']:
             wb_id = publish_wb(server, data)
-            mpd[data['wb_no']]['_is_' + data['publish_wb_data']
+            mpd[data['index_id']]['_is_' + data['publish_wb_data']
                                ['wb_name'] + '_published'] = True
     except Exception as tableu_exception:
-        mpd[data['wb_no']]['_is_' + data['publish_wb_data']
+        mpd[data['index_id']]['_is_' + data['publish_wb_data']
                            ['wb_name'] + '_published'] = False
         logging.error(
             "Something went wrong in publishing workbook.\n %s", tableu_exception)
@@ -41,7 +41,7 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
             for permission_data in data['permissions']:
                 is_group = None
 
-                mpd[data['wb_no']]['_is_' + data['publish_wb_data']
+                mpd[data['index_id']]['_is_' + data['publish_wb_data']
                                    ['wb_name'] + '_permissions_updated'] = True
 
                 # Step: Get the User or Group ID of permission assigned
@@ -110,7 +110,7 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
                         print(
                             f"\tPermission {permission_name} is set to {permission_mode} Successfully in {wb_id}\n")
     except Exception as tableu_exception:
-        mpd[data['wb_no']]['_is_' + data['publish_wb_data']
+        mpd[data['index_id']]['_is_' + data['publish_wb_data']
                            ['wb_name'] + '_permissions_updated'] = False
         logging.error(
             "Something went wrong in update permission of workbook.\n %s", tableu_exception)
@@ -164,7 +164,7 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
                     datasources['publish_ds_data']['publish_ds_site_name']
                 )
 
-                mpd[data['wb_no']]['_is_' + data['publish_wb_data']
+                mpd[data['index_id']]['_is_' + data['publish_wb_data']
                                    ['wb_name'] + '_datasource_updated'] = True
 
                 # Refresh Datasource
@@ -173,7 +173,7 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
             # Step: Sign Out to the Tableau Server
             server.auth.sign_out()
     except Exception as tableu_exception:
-        mpd[data['wb_no']]['_is_' + data['publish_wb_data']
+        mpd[data['index_id']]['_is_' + data['publish_wb_data']
                            ['wb_name'] + '_datasource_updated'] = False
         logging.error(
             "Something went wrong in publish datasource.\n %s", tableu_exception)

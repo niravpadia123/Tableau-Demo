@@ -1,7 +1,7 @@
 {
   "workbooks": [
     {
-      "wb_no": 0,
+      "index_id": 0,
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "is_wb_publish": true,
@@ -12,7 +12,7 @@
         "project_path": "D Working",
         "wb_name": "DT new Packaged multi v1 dev",
         "file_path": "DT new Packaged multi v1 dev.twb",
-        "tags": ["new"],
+        "tags": ["profit","new"],
         "hidden_views": [],
         "is_site_default": true,
         "show_tabs": true
@@ -20,17 +20,25 @@
       "is_wb_permissions_update": true,
       "permissions": [
         {
-          "permission_group_name": "All Users",
-          "permission_user_name": "",
+          "permission_group_name": "",
+          "permission_user_name": "Nirav.Padia",
           "permission_template": {
-            "Read": "Deny",
-            "Filter": "Deny",
-            "ViewComments": "Deny",
-            "AddComment": "Deny",
-            "ExportImage": "Deny",
-            "ExportData": "Deny",
-            "RunExplainData": "Deny",
-            "ShareView": "Deny"
+            "Read": "Allow",
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Allow",
+            "RunExplainData": "Allow",
+            "ShareView": "Allow",
+            "ViewUnderlyingData": "Allow",                    
+            "WebAuthoring": "",
+            "ExportXml": "",
+            "Write": "",
+            "CreateRefreshMetrics": "",
+            "ChangeHierarchy": "",
+            "Delete": "",
+            "ChangePermissions": ""
           }
         }
       ],
