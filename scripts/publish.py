@@ -36,14 +36,11 @@ def publish_wb(server, data):
     return new_workbook._id
 
 
-def publish_ds(server, data, dl_ds_file_path):
+def publish_ds(server, publish_ds_project_name, ds_name, dl_ds_file_path, publish_ds_site_name):
     """
     Funcrion Description
     """
-    project_id = get_project_id(
-        server, data['datasource']['publish_ds_data']['publish_ds_project_name'],
-        data['datasource']['ds_name']
-    )
+    project_id = get_project_id(server, publish_ds_project_name, ds_name)
 
     # Use the project id to create new datsource_item
     new_datasource = TSC.DatasourceItem(project_id)
@@ -53,6 +50,6 @@ def publish_ds(server, data, dl_ds_file_path):
         new_datasource, dl_ds_file_path, 'Overwrite')
 
     print(
-        f"\nSuccessfully published {data['datasource']['ds_name']} datasource in {data['datasource']['publish_ds_data']['publish_ds_project_name']} in {data['datasource']['publish_ds_data']['publish_ds_site_name']} site.")
+        f"\nSuccessfully published {ds_name} datasource in {publish_ds_project_name} in {publish_ds_site_name} site.")
 
     return new_datasource._id
