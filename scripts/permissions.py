@@ -10,7 +10,7 @@ xmlns = {'t': 'http://tableau.com/api'}
 def query_permission(server_url, version, site_id, wb_id,
                      auth_token, permission_user_or_group_id, is_group):
     """
-    Funcrion Description
+    This funciton get all data of permission
     """
     url = f"{server_url}api/{version}/sites/{site_id}/workbooks/{wb_id}/permissions"
 
@@ -37,7 +37,7 @@ def query_permission(server_url, version, site_id, wb_id,
 def add_permission(server_url, site_id, wb_id, permission_user_or_group_id, version,
                    auth_token, permission_name, permission_mode, is_group):
     """
-    Funcrion Description
+    This function add permissions using api call
     """
     url = f"{server_url}api/{version}/sites/{site_id}/workbooks/{wb_id}/permissions"
 
@@ -64,7 +64,7 @@ def add_permission(server_url, site_id, wb_id, permission_user_or_group_id, vers
 def delete_permission(server_url, site_id, auth_token, wb_id, permission_user_or_group_id,
                       permission_name, existing_permission_mode, version, is_group):
     """
-    Funcrion Description
+    This function delete permissions using api call
     """
     if is_group:
         group_or_user = "groups"

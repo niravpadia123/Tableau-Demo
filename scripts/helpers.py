@@ -8,7 +8,7 @@ xmlns = {'t': 'http://tableau.com/api'}
 
 class ApiCallError(Exception):
     """
-    Class Description
+    api caller class for excepiton
     """
     pass
 
@@ -35,7 +35,7 @@ def _check_status(server_response, success_code):
 
 def sign_in(username, password, server_url, site_name, is_site_default):
     """
-    Funcrion Description
+    This funciton sign in to server
     """
     tableau_auth = TSC.TableauAuth(
         username, password, None if is_site_default else site_name)
@@ -49,7 +49,7 @@ def sign_in(username, password, server_url, site_name, is_site_default):
 
 def get_project_id(server, project_path, file_path):
     """
-    Funcrion Description
+    This funciton get project id from the server
     """
     all_projects, pagination_item = server.projects.get()
     project = next(
@@ -63,7 +63,7 @@ def get_project_id(server, project_path, file_path):
 
 def get_group_id(server, permission_group_name):
     """
-    Function Description
+    This funciton get group id from the server
     """
     all_groups, pagination_item = server.groups.get()
     group_id_list = [
@@ -73,7 +73,7 @@ def get_group_id(server, permission_group_name):
 
 def get_user_id(server, permission_user_name):
     """
-    Funcrion Description
+    This funciton get user id from the server
     """
     all_users, pagination_item = server.users.get()
     user_id_list = [
@@ -83,7 +83,7 @@ def get_user_id(server, permission_user_name):
 
 def get_ds_id(server, ds_name, ds_project_name):
     """
-    Funcrion Description
+    This funciton get datasource id from the sever
     """
     all_datasources, pagination_item = server.datasources.get()
 
@@ -94,7 +94,7 @@ def get_ds_id(server, ds_name, ds_project_name):
 
 def dl_ds(server, ds_id):
     """
-    Funcrion Description
+    This funciton download datasource from the server
     """
     file_path = server.datasources.download(ds_id)
     print(f"\nDownloaded the file to {file_path}.")
@@ -103,7 +103,7 @@ def dl_ds(server, ds_id):
 
 def ds_refresh(server, ds_name, ds_id):
     """
-    Funcrion Description
+    This funciton refresh the datasource
     """
     datasource = server.datasources.get_by_id(ds_id)
 
