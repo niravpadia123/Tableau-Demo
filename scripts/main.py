@@ -49,7 +49,7 @@ def main(arguments):
         print('_' * 50)
         for i in mpd:
             for key, val in i.items():
-                if key == "wb_name":
+                if key == "wb_name" and val:
                     print('\033[1m' + f"{val}:" + '\033[0m')
                 elif "_published" in key and val is not None:
                     print(f"\t-Published: {val}")
