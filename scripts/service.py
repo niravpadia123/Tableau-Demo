@@ -12,10 +12,6 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
     This function call all internal methods and apis conditionally
     """
     
-    all_sites, pagination_item = server.sites.get()
-    for site in all_sites:       
-        print(site.id, site.name, site.content_url, site.state)
-
     is_sign_in = False
     # Sign in and Publish Workbook Part
     try:
@@ -42,6 +38,12 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
                               ['wb_name'] + '_published'] = False
         logging.error(
             "Something went wrong in publishing workbook.\n %s", tableu_exception)
+
+    
+    all_sites, pagination_item = server.sites.get()
+    for site in all_sites:       
+        print(site.id, site.name, site.content_url, site.state)
+        
 
     # Permissions Part
     try:
