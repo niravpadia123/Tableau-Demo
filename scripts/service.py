@@ -11,6 +11,11 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
     """
     This function call all internal methods and apis conditionally
     """
+    
+    all_sites, pagination_item = server.sites.get()
+    for site in all_sites:       
+        print(site.id, site.name, site.content_url, site.state)
+
     is_sign_in = False
     # Sign in and Publish Workbook Part
     try:
@@ -27,7 +32,7 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
             )
 
             is_sign_in = True
-
+    
         if data['is_wb_publish']:
             wb_id = publish_wb(server, data)
             mpd[data['index_id']]['_is_' + data['publish_wb_data']
