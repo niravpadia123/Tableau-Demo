@@ -50,7 +50,7 @@
             "get_ds_server_name": "dev",
             "get_ds_site_name": "Enterprise",
             "get_ds_project_name": "Technology",
-            "is_site_default": true
+            "is_site_default": false
           },
           "publish_ds_data": {
             "publish_ds_server_name": "dev",
