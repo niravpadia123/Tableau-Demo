@@ -6,15 +6,15 @@
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "is_wb_publish": false,
       "publish_wb_data": {
-        "server_name": "",
-        "site_id": "",
-        "site_name": "",
-        "project_path": "",
-        "wb_name": "",
-        "file_path": "",
-        "tags": [],
-        "hidden_views": [],
-        "is_site_default": false,
+        "server_name": "dev",
+        "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
+        "site_name": "Enterprise",
+        "project_path": "Test Project",
+        "wb_name": "op sales new",
+        "file_path": "op sales new.twb",
+        "tags": ["sales"],
+        "hidden_views": ["Sheet1"],
+        "is_site_default": true,
         "show_tabs": true
       },
       "is_wb_permissions_update": false,
@@ -42,7 +42,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasources": [
         {
           "ds_name": "Disposition Tracker DS",
@@ -58,20 +58,66 @@
             "publish_ds_project_name": "Dev Working",
             "is_site_default": false
           }
-        },
+        }
+      ]
+    },
+    {
+      "index_id": 1,
+      "dev_server_url": "https://tableau.devinvh.com/",
+      "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
+      "is_wb_publish": false,
+      "publish_wb_data": {
+        "server_name": "dev",
+        "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
+        "site_name": "Enterprise",
+        "project_path": "Private",
+        "wb_name": "Forecasting",
+        "file_path": "Forecasting.twbx",
+        "tags": ["sales"],
+        "hidden_views": ["State","Forecast"],
+        "is_site_default": true,
+        "show_tabs": true
+      },
+      "is_wb_permissions_update": true,
+      "permissions": [
         {
-          "ds_name": "Sample - Superstore",
+          "permission_group_name": "",
+          "permission_user_name": "Nirav.Padia",
+          "permission_template": {
+            "Read": "Allow",
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Allow",
+            "RunExplainData": "Allow",
+            "ShareView": "Allow",
+            "ViewUnderlyingData": "Allow",
+            "WebAuthoring": "Allow",
+            "ExportXml": "Allow",
+            "Write": "Allow",
+            "CreateRefreshMetrics": "Allow",
+            "ChangeHierarchy": "Allow",
+            "Delete": "Allow",
+            "ChangePermissions": "Allow"
+          }
+        }
+      ],
+      "is_datasource_update": false,
+      "datasources": [
+        {
+          "ds_name": "Disposition Tracker DS",
           "get_ds_data": {
             "get_ds_server_name": "dev",
-            "get_ds_site_name": "DataLab",
-            "get_ds_project_name": "Development",
-            "is_site_default": false
+            "get_ds_site_name": "Enterprise",
+            "get_ds_project_name": "Technology",
+            "is_site_default": true
           },
           "publish_ds_data": {
             "publish_ds_server_name": "dev",
-            "publish_ds_site_name": "Enterprise",
-            "publish_ds_project_name": "Test Project",
-            "is_site_default": true
+            "publish_ds_site_name": "DataLab",
+            "publish_ds_project_name": "Dev Working",
+            "is_site_default": false
           }
         }
       ]
