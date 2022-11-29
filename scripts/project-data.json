@@ -12,12 +12,12 @@
         "project_path": "Development",
         "wb_name": "Forecasting",
         "file_path": "Forecasting.twbx",
-        "tags": ["sales"],
-        "hidden_views": ["Sheet1"],
-        "is_site_default": true,
+        "tags": [""],
+        "hidden_views": [""],
+        "is_site_default": false,
         "show_tabs": true
       },
-      "is_wb_permissions_update": true,
+      "is_wb_permissions_update": false,
       "permissions": [
         {
           "permission_group_name": "",
