@@ -10,8 +10,8 @@
         "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
         "site_name": "DataLab",
         "project_path": "Dev Final",
-        "wb_name": "DT new Packaged v1 new",
-        "file_path": "DT new Packaged v1 new.twb",
+        "wb_name": "DT new Packaged multi v1",
+        "file_path": "DT new Packaged multi v1.twb",
         "tags": ["DT Package"],
         "hidden_views": [""],
         "is_site_default": false,
@@ -115,7 +115,7 @@
         "is_site_default": false,
         "show_tabs": true
       },
-      "is_wb_permissions_update": false,
+      "is_wb_permissions_update": true,
       "permissions": [
         {
           "permission_group_name": "All Users",
