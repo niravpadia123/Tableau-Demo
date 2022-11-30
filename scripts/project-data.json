@@ -4,15 +4,15 @@
       "index_id": 0,
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": false,
+      "is_wb_publish": true,
       "publish_wb_data": {
-        "server_name": "",
-        "site_id": "",
-        "site_name": "",
-        "project_path": "",
-        "wb_name": "",
-        "file_path": "",
-        "tags": [""],
+        "server_name": "dev",
+        "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
+        "site_name": "DataLab",
+        "project_path": "Dev Final",
+        "wb_name": "DT new Packaged v1 new",
+        "file_path": "DT new Packaged v1 new.twb",
+        "tags": ["DT Package"],
         "hidden_views": [""],
         "is_site_default": false,
         "show_tabs": true
@@ -64,7 +64,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasources": [
         {
           "ds_name": "Disposition Tracker DS",
@@ -102,7 +102,7 @@
       "index_id": 1,
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": false,
+      "is_wb_publish": true,
       "publish_wb_data": {
         "server_name": "prod",
         "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
@@ -193,7 +193,7 @@
         "project_path": "Dev Final",
         "wb_name": "Forecast Orders v1",
         "file_path": "Forecast Orders.twbx",
-        "tags": ["twb"],
+        "tags": ["Forecast"],
         "hidden_views": [""],
         "is_site_default": false,
         "show_tabs": true
