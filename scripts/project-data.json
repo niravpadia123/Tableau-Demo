@@ -58,13 +58,13 @@
             "ExportXml": "Allow",
             "Write": "Allow",
             "CreateRefreshMetrics": "Allow",
-            "ChangeHierarchy": "Allow",
-            "Delete": "Allow",
-            "ChangePermissions": "Allow"
+            "ChangeHierarchy": "Deny",
+            "Delete": "Deny",
+            "ChangePermissions": "Deny"
           }
         }
       ],
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasources": [
         {
           "ds_name": "Disposition Tracker DS",
@@ -130,11 +130,11 @@
             "RunExplainData": "Allow",
             "ShareView": "Allow",
             "ViewUnderlyingData": "Allow",
-            "WebAuthoring": "Deny",
-            "ExportXml": "Deny",
-            "Write": "Deny",
-            "CreateRefreshMetrics": "Deny",
-            "ChangeHierarchy": "Deny",
+            "WebAuthoring": "Allow",
+            "ExportXml": "Allow",
+            "Write": "Allow",
+            "CreateRefreshMetrics": "Allow",
+            "ChangeHierarchy": "Allow",
             "Delete": "Deny",
             "ChangePermissions": "Deny"
           }
@@ -157,8 +157,8 @@
             "Write": "Allow",
             "CreateRefreshMetrics": "Allow",
             "ChangeHierarchy": "Allow",
-            "Delete": "Allow",
-            "ChangePermissions": "Allow"
+            "Delete": "Deny",
+            "ChangePermissions": "Deny"
           }
         }
       ],
@@ -182,7 +182,7 @@
       ]
     },
     {
-      "index_id": 1,
+      "index_id": 2,
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "is_wb_publish": true,
@@ -193,7 +193,7 @@
         "project_path": "Dev Final",
         "wb_name": "Forecast Orders",
         "file_path": "Forecast Orders.twbx",
-        "tags": ["Forecast"],
+        "tags": ["Forecast","Orders","Stores"],
         "hidden_views": [""],
         "is_site_default": false,
         "show_tabs": true
@@ -215,9 +215,9 @@
             "ViewUnderlyingData": "Allow",
             "WebAuthoring": "Allow",
             "ExportXml": "Allow",
-            "Write": "Deny",
-            "CreateRefreshMetrics": "Deny",
-            "ChangeHierarchy": "Deny",
+            "Write": "Allow",
+            "CreateRefreshMetrics": "Allow",
+            "ChangeHierarchy": "Allow",
             "Delete": "Deny",
             "ChangePermissions": "Deny"
           }
@@ -234,13 +234,13 @@
             "ExportData": "Allow",
             "RunExplainData": "Allow",
             "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",
-            "WebAuthoring": "Allow",
-            "ExportXml": "Allow",
-            "Write": "Allow",
-            "CreateRefreshMetrics": "Allow",
-            "ChangeHierarchy": "Allow",
-            "Delete": "Allow",
+            "ViewUnderlyingData": "Deny",
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Deny",
+            "ChangeHierarchy": "Deny",
+            "Delete": "Deny",
             "ChangePermissions": "Deny"
           }
         }
