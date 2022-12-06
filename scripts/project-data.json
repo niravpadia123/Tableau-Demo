@@ -24,21 +24,21 @@
           "permission_user_name": "",
           "permission_template": {
             "Read": "Allow",
-            "Filter": "Deny",
-            "ViewComments": "Deny",
-            "AddComment": "Deny",
-            "ExportImage": "Deny",
-            "ExportData": "Deny",
-            "RunExplainData": "Deny",
-            "ShareView": "Deny",
-            "ViewUnderlyingData": "Deny",
-            "WebAuthoring": "Deny",
-            "ExportXml": "Deny",
-            "Write": "Deny",
-            "CreateRefreshMetrics": "Deny",
-            "ChangeHierarchy": "Deny",
-            "Delete": "Deny",
-            "ChangePermissions": "Deny"
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Allow",
+            "RunExplainData": "Allow",
+            "ShareView": "Allow",
+            "ViewUnderlyingData": "Allow",
+            "WebAuthoring": "Allow",
+            "ExportXml": "Allow",
+            "Write": "Allow",
+            "CreateRefreshMetrics": "Allow",
+            "ChangeHierarchy": "Allow",
+            "Delete": "Allow",
+            "ChangePermissions": "Allow"
           }
         },
         {
@@ -59,7 +59,7 @@
             "Write": "Allow",
             "CreateRefreshMetrics": "Allow",
             "ChangeHierarchy": "Allow",
-            "Delete": "Allow",
+            "Delete": "Deny",
             "ChangePermissions": "Deny"
           }
         }
@@ -111,7 +111,7 @@
         "wb_name": "Sales Superstore v2",
         "file_path": "Sales Superstore v1.twb",
         "tags": ["profit","Sales"],
-        "hidden_views": ["Sheet1"],
+        "hidden_views": ["Sheet 1"],
         "is_site_default": false,
         "show_tabs": true
       },
@@ -122,8 +122,21 @@
           "permission_user_name": "",
           "permission_template": {
             "Read": "Allow",
-            "Filter": "Deny",
-            "ViewComments": "Deny"
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Allow",
+            "RunExplainData": "Allow",
+            "ShareView": "Allow",
+            "ViewUnderlyingData": "Allow",
+            "WebAuthoring": "Allow",
+            "ExportXml": "Allow",
+            "Write": "Allow",
+            "CreateRefreshMetrics": "Allow",
+            "ChangeHierarchy": "Allow",
+            "Delete": "Allow",
+            "ChangePermissions": "Allow"
           }
         },
         {
@@ -173,7 +186,45 @@
       },
       "is_wb_permissions_update": false,
       "permissions": [
-
+        {
+          "permission_group_name": "All Users",
+          "permission_user_name": "",
+          "permission_template": {
+            "Read": "Allow",
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Deny",
+            "RunExplainData": "Deny",
+            "ShareView": "Deny",
+            "ViewUnderlyingData": "Deny",
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Deny",
+            "ChangeHierarchy": "Deny",
+            "Delete": "Deny",
+            "ChangePermissions": "Deny"          }
+        },
+        {
+          "permission_group_name": "",
+          "permission_user_name": "Nirav.Padia",
+          "permission_template": {
+            "Read": "Allow",
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Deny",
+            "RunExplainData": "Deny",
+            "ShareView": "Deny",
+            "ViewUnderlyingData": "Deny",
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny"
+          }
+        }
       ],
       "is_datasource_update": false,
       "datasources": [
