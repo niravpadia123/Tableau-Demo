@@ -11,6 +11,67 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
     """
     This function call all internal methods and apis conditionally
     """
+    # Datasource Part
+    try:
+        if data['is_datasource_update']:
+            for datasources in data['datasources']:
+                # Step: Sign In to the Tableau Server
+                if datasources['get_ds_data']['get_ds_server_name'] == "dev":
+                    uname, pname, surl = username, password, data['dev_server_url']
+                elif datasources['get_ds_data']['get_ds_server_name'] == "prod":
+                    uname, pname, surl = prod_username, prod_password, data['prod_server_url']
+
+                server, auth_token, version = sign_in(
+                    uname, pname, surl,
+                    datasources['get_ds_data']['get_ds_site_name'],
+                    datasources['get_ds_data']['is_site_default']
+                )
+
+                # Get datasource id from the name and project name
+                ds_id = get_ds_id(
+                    server, datasources['ds_name'],
+                    datasources['get_ds_data']['get_ds_project_name'])[0]
+
+                # Download datasource
+                dl_ds_file_path = dl_ds(server, ds_id)
+
+                # Step: Sign Out to the Tableau Server
+                server.auth.sign_out()
+
+                # Step: Sign In to the Tableau Server
+                if datasources['publish_ds_data']['publish_ds_server_name'] == "dev":
+                    uname, pname, surl = username, password, data['dev_server_url']
+                elif datasources['publish_ds_data']['publish_ds_server_name'] == "prod":
+                    uname, pname, surl = prod_username, prod_password, data['prod_server_url']
+
+                server, auth_token, version = sign_in(
+                    uname, pname, surl,
+                    datasources['publish_ds_data']['publish_ds_site_name'],
+                    datasources['publish_ds_data']['is_site_default']
+                )
+
+                # Publish Datasource
+                ds_id = publish_ds(
+                    server, datasources['publish_ds_data']['publish_ds_project_name'],
+                    datasources['ds_name'], dl_ds_file_path,
+                    datasources['publish_ds_data']['publish_ds_site_name']
+                )
+
+                mpd[data['index_id']]['_is_' + data['publish_wb_data']
+                                      ['wb_name'] + '_datasource_updated'] = True
+
+                # Refresh Datasource
+                ds_refresh(server, datasources['ds_name'], ds_id)
+
+            # Step: Sign Out to the Tableau Server
+            server.auth.sign_out()
+    except Exception as tableu_exception:
+        mpd[data['index_id']]['_is_' + data['publish_wb_data']
+                              ['wb_name'] + '_datasource_updated'] = False
+        logging.error(
+            "Something went wrong in publish datasource.\n %s", tableu_exception)
+
+
     is_sign_in = False
     # Sign in and Publish Workbook Part
     try:
@@ -121,63 +182,3 @@ def service_func(data, username, password, prod_username, prod_password, mpd):
     # Step: Sign Out to the Tableau Server
     if is_sign_in:
         server.auth.sign_out()
-
-    # Datasource Part
-    try:
-        if data['is_datasource_update']:
-            for datasources in data['datasources']:
-                # Step: Sign In to the Tableau Server
-                if datasources['get_ds_data']['get_ds_server_name'] == "dev":
-                    uname, pname, surl = username, password, data['dev_server_url']
-                elif datasources['get_ds_data']['get_ds_server_name'] == "prod":
-                    uname, pname, surl = prod_username, prod_password, data['prod_server_url']
-
-                server, auth_token, version = sign_in(
-                    uname, pname, surl,
-                    datasources['get_ds_data']['get_ds_site_name'],
-                    datasources['get_ds_data']['is_site_default']
-                )
-
-                # Get datasource id from the name and project name
-                ds_id = get_ds_id(
-                    server, datasources['ds_name'],
-                    datasources['get_ds_data']['get_ds_project_name'])[0]
-
-                # Download datasource
-                dl_ds_file_path = dl_ds(server, ds_id)
-
-                # Step: Sign Out to the Tableau Server
-                server.auth.sign_out()
-
-                # Step: Sign In to the Tableau Server
-                if datasources['publish_ds_data']['publish_ds_server_name'] == "dev":
-                    uname, pname, surl = username, password, data['dev_server_url']
-                elif datasources['publish_ds_data']['publish_ds_server_name'] == "prod":
-                    uname, pname, surl = prod_username, prod_password, data['prod_server_url']
-
-                server, auth_token, version = sign_in(
-                    uname, pname, surl,
-                    datasources['publish_ds_data']['publish_ds_site_name'],
-                    datasources['publish_ds_data']['is_site_default']
-                )
-
-                # Publish Datasource
-                ds_id = publish_ds(
-                    server, datasources['publish_ds_data']['publish_ds_project_name'],
-                    datasources['ds_name'], dl_ds_file_path,
-                    datasources['publish_ds_data']['publish_ds_site_name']
-                )
-
-                mpd[data['index_id']]['_is_' + data['publish_wb_data']
-                                      ['wb_name'] + '_datasource_updated'] = True
-
-                # Refresh Datasource
-                ds_refresh(server, datasources['ds_name'], ds_id)
-
-            # Step: Sign Out to the Tableau Server
-            server.auth.sign_out()
-    except Exception as tableu_exception:
-        mpd[data['index_id']]['_is_' + data['publish_wb_data']
-                              ['wb_name'] + '_datasource_updated'] = False
-        logging.error(
-            "Something went wrong in publish datasource.\n %s", tableu_exception)

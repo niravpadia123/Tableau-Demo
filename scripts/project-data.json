@@ -6,10 +6,10 @@
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "is_wb_publish": true,
       "publish_wb_data": {
-        "server_name": "dev",
-        "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
+        "server_name": "prod",
+        "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
         "site_name": "DataLab",
-        "project_path": "Online",
+        "project_path": "Development",
         "wb_name": "Multi datasource wb",
         "file_path": "DT new multi data.twb",
         "tags": ["multi data","DT New"],
@@ -23,48 +23,48 @@
           "permission_group_name": "All Users",
           "permission_user_name": "",
           "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Allow",
-            "RunExplainData": "Allow",
-            "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",
-            "WebAuthoring": "Allow",
-            "ExportXml": "Allow",
-            "Write": "Allow",
-            "CreateRefreshMetrics": "Allow",
-            "ChangeHierarchy": "Allow",
-            "Delete": "Allow",
-            "ChangePermissions": "Allow"
+            "Read": "Deny",
+            "Filter": "Deny",
+            "ViewComments": "Deny",
+            "AddComment": "Deny",
+            "ExportImage": "Deny",
+            "ExportData": "Deny",
+            "RunExplainData": "Deny",
+            "ShareView": "Deny",
+            "ViewUnderlyingData": "Deny",                    
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Deny",
+            "ChangeHierarchy": "Deny",
+            "Delete": "Deny",
+            "ChangePermissions": "Deny"
           }
         },
         {
           "permission_group_name": "",
           "permission_user_name": "Nirav.Padia",
           "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Allow",
-            "RunExplainData": "Allow",
-            "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",
-            "WebAuthoring": "Allow",
-            "ExportXml": "Allow",
-            "Write": "Allow",
-            "CreateRefreshMetrics": "Allow",
-            "ChangeHierarchy": "Allow",
+            "Read": "Deny",
+            "Filter": "Deny",
+            "ViewComments": "Deny",
+            "AddComment": "Deny",
+            "ExportImage": "Deny",
+            "ExportData": "Deny",
+            "RunExplainData": "Deny",
+            "ShareView": "Deny",
+            "ViewUnderlyingData": "Deny",                    
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Deny",
+            "ChangeHierarchy": "Deny",
             "Delete": "Deny",
             "ChangePermissions": "Deny"
           }
         }
       ],
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasources": [
         {
           "ds_name": "Disposition Tracker DS",
@@ -77,7 +77,7 @@
           "publish_ds_data": {
             "publish_ds_server_name": "prod",
             "publish_ds_site_name": "DataLab",
-            "publish_ds_project_name": "Dev Working",
+            "publish_ds_project_name": "Development",
             "is_site_default": false
           }
         },
@@ -96,139 +96,6 @@
             "is_site_default": false
           }
         }
-      ]
-    },
-    {
-      "index_id": 1,
-      "dev_server_url": "https://tableau.devinvh.com/",
-      "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": true,
-      "publish_wb_data": {
-        "server_name": "dev",
-        "site_id": "834abe2d-18ac-46d3-9346-a2f3079941d2",
-        "site_name": "Enterprise",
-        "project_path": "Dashboard",
-        "wb_name": "Sales Superstore v2",
-        "file_path": "Sales Superstore v1.twb",
-        "tags": ["profit","Sales"],
-        "hidden_views": ["Sheet 1"],
-        "is_site_default": true,
-        "show_tabs": true
-      },
-      "is_wb_permissions_update": false,
-      "permissions": [
-        {
-          "permission_group_name": "All Users",
-          "permission_user_name": "",
-          "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Allow",
-            "RunExplainData": "Allow",
-            "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",
-            "WebAuthoring": "Allow",
-            "ExportXml": "Allow",
-            "Write": "Allow",
-            "CreateRefreshMetrics": "Allow",
-            "ChangeHierarchy": "Allow",
-            "Delete": "Allow",
-            "ChangePermissions": "Allow"
-          }
-        },
-        {
-          "permission_group_name": "",
-          "permission_user_name": "Nirav.Padia",
-          "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Allow",
-            "RunExplainData": "Allow",
-            "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",
-            "WebAuthoring": "Allow",
-            "ExportXml": "Allow",
-            "Write": "Allow",
-            "CreateRefreshMetrics": "Allow",
-            "ChangeHierarchy": "Allow",
-            "Delete": "Allow",
-            "ChangePermissions": "Allow"
-          }
-        }
-      ],
-      "is_datasource_update": false,
-      "datasources": [
-
-      ]
-    },
-    {
-      "index_id": 2,
-      "dev_server_url": "https://tableau.devinvh.com/",
-      "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": true,
-      "publish_wb_data": {
-        "server_name": "prod",
-        "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
-        "site_name": "DataLab",
-        "project_path": "Dev Final",
-        "wb_name": "DT Packaged WB V1",
-        "file_path": "DT Packaged WB V1.twbx",
-        "tags": ["twbx"],
-        "hidden_views": [""],
-        "is_site_default": false,
-        "show_tabs": true
-      },
-      "is_wb_permissions_update": false,
-      "permissions": [
-        {
-          "permission_group_name": "All Users",
-          "permission_user_name": "",
-          "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Deny",
-            "RunExplainData": "Deny",
-            "ShareView": "Deny",
-            "ViewUnderlyingData": "Deny",
-            "WebAuthoring": "Deny",
-            "ExportXml": "Deny",
-            "Write": "Deny",
-            "CreateRefreshMetrics": "Deny",
-            "ChangeHierarchy": "Deny",
-            "Delete": "Deny",
-            "ChangePermissions": "Deny"          }
-        },
-        {
-          "permission_group_name": "",
-          "permission_user_name": "Nirav.Padia",
-          "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Deny",
-            "RunExplainData": "Deny",
-            "ShareView": "Deny",
-            "ViewUnderlyingData": "Deny",
-            "WebAuthoring": "Deny",
-            "ExportXml": "Deny",
-            "Write": "Deny"
-          }
-        }
-      ],
-      "is_datasource_update": false,
-      "datasources": [
-
       ]
     }
   ]
