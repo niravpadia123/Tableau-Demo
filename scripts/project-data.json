@@ -9,7 +9,7 @@
         "server_name": "prod",
         "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
         "site_name": "DataLab",
-        "project_path": "Development",
+        "project_path": "Dev Final",
         "wb_name": "Multi datasource wb",
         "file_path": "DT new multi data.twb",
         "tags": ["multi data","DT New"],
@@ -80,7 +80,75 @@
             "publish_ds_project_name": "Development",
             "is_site_default": false
           }
+        }
+      ]
+    },
+    {
+      "index_id": 1,
+      "dev_server_url": "https://tableau.devinvh.com/",
+      "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
+      "is_wb_publish": true,
+      "publish_wb_data": {
+        "server_name": "prod",
+        "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
+        "site_name": "DataLab",
+        "project_path": "Dev Final",
+        "wb_name": "Sales Superstore v3",
+        "file_path": "Sales Superstore v1.twb",
+        "tags": ["new"],
+        "hidden_views": ["Sheet 1"],
+        "is_site_default": false,
+        "show_tabs": true
+      },
+      "is_wb_permissions_update": true,
+      "permissions": [
+        {
+          "permission_group_name": "All Users",
+          "permission_user_name": "",
+          "permission_template": {
+            "Read": "Deny",
+            "Filter": "Deny",
+            "ViewComments": "Deny",
+            "AddComment": "Deny",
+            "ExportImage": "Deny",
+            "ExportData": "Deny",
+            "RunExplainData": "Deny",
+            "ShareView": "Deny",
+            "ViewUnderlyingData": "Deny",                    
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Deny",
+            "ChangeHierarchy": "Deny",
+            "Delete": "Deny",
+            "ChangePermissions": "Deny"
+          }
         },
+        {
+          "permission_group_name": "",
+          "permission_user_name": "Nirav.Padia",
+          "permission_template": {
+            "Read": "Deny",
+            "Filter": "Deny",
+            "ViewComments": "Deny",
+            "AddComment": "Deny",
+            "ExportImage": "Deny",
+            "ExportData": "Deny",
+            "RunExplainData": "Deny",
+            "ShareView": "Deny",
+            "ViewUnderlyingData": "Deny",                    
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Deny",
+            "ChangeHierarchy": "Deny",
+            "Delete": "Deny",
+            "ChangePermissions": "Deny"
+          }
+        }
+      ],
+      "is_datasource_update": true,
+      "datasources": [
         {
           "ds_name": "Sample - Superstore",
           "get_ds_data": {
