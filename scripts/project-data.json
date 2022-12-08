@@ -17,7 +17,7 @@
         "is_site_default": false,
         "show_tabs": true
       },
-      "is_wb_permissions_update": false,
+      "is_wb_permissions_update": true,
       "permissions": [
         {
           "permission_group_name": "All Users",
@@ -100,7 +100,7 @@
         "is_site_default": false,
         "show_tabs": true
       },
-      "is_wb_permissions_update": false,
+      "is_wb_permissions_update": true,
       "permissions": [
         {
           "permission_group_name": "All Users",
