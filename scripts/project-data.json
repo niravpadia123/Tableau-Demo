@@ -93,10 +93,10 @@
         "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
         "site_name": "DataLab",
         "project_path": "Dev Working",
-        "wb_name": "DT Packaged WB V3",
+        "wb_name": "DT Packaged WB V2",
         "file_path": "DT Packaged WB V2.twbx",
         "tags": ["twbx wb"],
-        "hidden_views": [""],
+        "hidden_views": ["Scheduled & T90 Dispositions"],
         "is_site_default": false,
         "show_tabs": true
       },
