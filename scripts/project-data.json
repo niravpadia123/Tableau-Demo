@@ -95,7 +95,7 @@
         "project_path": "Dev Final",
         "wb_name": "Forecast Orders",
         "file_path": "Forecast Orders.twbx",
-        "tags": ["Forecast"],
+        "tags": ["Forecast","Trend"],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
