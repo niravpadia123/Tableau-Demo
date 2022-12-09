@@ -155,7 +155,7 @@
         "site_name": "Enterprise",
         "project_path": "RTM",
         "wb_name": "Forecast Orders",
-        "file_path": "Forecast Orders.twb",
+        "file_path": "Forecast Orders.twbx",
         "tags": ["newprod"],
         "hidden_views": [],
         "is_site_default": false,
