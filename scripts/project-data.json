@@ -158,7 +158,7 @@
         "file_path": "Forecast Orders.twbx",
         "tags": ["newprod"],
         "hidden_views": [],
-        "is_site_default": false,
+        "is_site_default": true,
         "show_tabs": true
       },
       "is_wb_permissions_update": true,
