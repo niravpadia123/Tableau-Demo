@@ -46,26 +46,26 @@ def main(arguments):
         iter_split_end += num_proc
         jobs = []
 
-        print('_' * 50)
-        for i in mpd:
-            for key, val in i.items():
-                if key == "wb_name" and val:
-                    print('\033[1m' + f"{val}:" + '\033[0m')
-                elif "_published" in key and val is not None:
-                    print(f"\t-Published: {val}")
-                elif "_permissions_updated" in key and val is not None:
-                    print(f"\t-Permission Updated: {val}")
-                elif "_datasource_updated" in key and val is not None:
-                    print(f"\t-Datasource Updated: {val}")
+    print('_' * 50)
+    for i in mpd:
+        for key, val in i.items():
+            if key == "wb_name" and val:
+                print('\033[1m' + f"{val}:" + '\033[0m')
+            elif "_published" in key and val is not None:
+                print(f"\t-Published: {val}")
+            elif "_permissions_updated" in key and val is not None:
+                print(f"\t-Permission Updated: {val}")
+            elif "_datasource_updated" in key and val is not None:
+                print(f"\t-Datasource Updated: {val}")
 
-        for i in mpd:
-            for key, val in i.items():
-                if "_published" in key and val == False:
-                    exit(1)
-                elif "_permissions_updated" in key and val == False:
-                    exit(1)
-                elif "_datasource_updated" in key and val == False:
-                    exit(1)
+    for i in mpd:
+        for key, val in i.items():
+            if "_published" in key and val == False:
+                exit(1)
+            elif "_permissions_updated" in key and val == False:
+                exit(1)
+            elif "_datasource_updated" in key and val == False:
+                exit(1)
 
 
 if __name__ == '__main__':
