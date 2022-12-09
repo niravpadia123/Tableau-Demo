@@ -24,11 +24,11 @@
           "permission_user_name": "",
           "permission_template": {
             "Read": "Allow",
-            "Filter": "Deny",
-            "ViewComments": "Deny",
-            "AddComment": "Deny",
-            "ExportImage": "Deny",
-            "ExportData": "Deny",
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Allow",
             "RunExplainData": "Deny",
             "ShareView": "Deny",
             "ViewUnderlyingData": "Deny",                    
@@ -186,7 +186,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasources": [
         {
           "ds_name": "Order Multiple Connections",
