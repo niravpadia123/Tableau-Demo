@@ -125,7 +125,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasources": [
         {
           "ds_name": "Order Multiple Connections",
@@ -133,128 +133,6 @@
             "get_ds_server_name": "dev",
             "get_ds_site_name": "Enterprise",
             "get_ds_project_name": "TO Work",
-            "is_site_default": true
-          },
-          "publish_ds_data": {
-            "publish_ds_server_name": "prod",
-            "publish_ds_site_name": "DataLab",
-            "publish_ds_project_name": "Default",
-            "is_site_default": false
-          }
-        }
-      ]
-    },
-    {
-      "index_id": 2,
-      "dev_server_url": "https://tableau.devinvh.com/",
-      "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": true,
-      "publish_wb_data": {
-        "server_name": "dev",
-        "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
-        "site_name": "DataLab",
-        "project_path": "Default",
-        "wb_name": "multi order v35",
-        "file_path": "multi order v33.twb",
-        "tags": ["newprod"],
-        "hidden_views": [],
-        "is_site_default": false,
-        "show_tabs": true
-      },
-      "is_wb_permissions_update": true,
-      "permissions": [
-        {
-          "permission_group_name": "",
-          "permission_user_name": "Nirav.Padia",
-          "permission_template": {
-            "Read": "Allow",
-            "Filter": "Deny",
-            "ViewComments": "Deny",
-            "AddComment": "Deny",
-            "ExportImage": "Deny",
-            "ExportData": "Deny",
-            "RunExplainData": "Deny",
-            "ShareView": "Deny",
-            "ViewUnderlyingData": "Deny",                    
-            "WebAuthoring": "Deny",
-            "ExportXml": "Deny",
-            "Write": "Deny",
-            "CreateRefreshMetrics": "Deny",
-            "ChangeHierarchy": "Deny",
-            "Delete": "Deny",
-            "ChangePermissions": "Deny"
-          }
-        }
-      ],
-      "is_datasource_update": true,
-      "datasources": [
-        {
-          "ds_name": "Order Multiple Connections",
-          "get_ds_data": {
-            "get_ds_server_name": "dev",
-            "get_ds_site_name": "Enterprise",
-            "get_ds_project_name": "TO Work",
-            "is_site_default": true
-          },
-          "publish_ds_data": {
-            "publish_ds_server_name": "prod",
-            "publish_ds_site_name": "DataLab",
-            "publish_ds_project_name": "Default",
-            "is_site_default": false
-          }
-        }
-      ]
-    },
-    {
-      "index_id": 3,
-      "dev_server_url": "https://tableau.devinvh.com/",
-      "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": true,
-      "publish_wb_data": {
-        "server_name": "prod",
-        "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
-        "site_name": "DataLab",
-        "project_path": "Dev Final",
-        "wb_name": "DT new multi data v1",
-        "file_path": "DT new multi data v1.twb",
-        "tags": ["Forecast","Trend"],
-        "hidden_views": [],
-        "is_site_default": false,
-        "show_tabs": true
-      },
-      "is_wb_permissions_update": true,
-      "permissions": [
-        {
-          "permission_group_name": "",
-          "permission_user_name": "Nirav.Padia",
-          "permission_template": {
-            "Read": "Allow",
-            "Filter": "Allow",
-            "ViewComments": "Allow",
-            "AddComment": "Allow",
-            "ExportImage": "Allow",
-            "ExportData": "Allow",
-            "RunExplainData": "Allow",
-            "ShareView": "Allow",
-            "ViewUnderlyingData": "Allow",                    
-            "WebAuthoring": "Deny",
-            "ExportXml": "Deny",
-            "Write": "Deny",
-            "CreateRefreshMetrics": "Deny",
-            "ChangeHierarchy": "Deny",
-            "Delete": "Deny",
-            "ChangePermissions": "Deny"
-          }
-        }
-      ],
-      "is_datasource_update": true,
-      "datasources": [
-        {
-          "ds_name": "Disposition Tracker DS",
-          "get_ds_data": {
-            "get_ds_server_name": "dev",
-            "get_ds_site_name": "Enterprise",
-            "get_ds_project_name": "Technology",
             "is_site_default": true
           },
           "publish_ds_data": {
