@@ -45,8 +45,8 @@
           "permission_group_name": "",
           "permission_user_name": "Nirav.Padia",
           "permission_template": {
-            "Read": "Den",
-            "Filter": "Allow",
+            "Read": "Deny",
+            "Filter": "Deny",
             "ViewComments": "Allow",
             "AddComment": "Allow",
             "ExportImage": "Allow",
