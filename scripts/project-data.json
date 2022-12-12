@@ -236,7 +236,7 @@
             "ExportData": "Allow",
             "RunExplainData": "Allow",
             "ShareView": "Allow",
-            "ViewUnderlyingData": "Deny",                    
+            "ViewUnderlyingData": "Allow",                    
             "WebAuthoring": "Deny",
             "ExportXml": "Deny",
             "Write": "Deny",
