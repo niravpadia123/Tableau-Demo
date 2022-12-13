@@ -9,7 +9,7 @@
         "server_name": "prod",
         "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
         "site_name": "DataLab",
-        "project_path": "Default",
+        "project_path": "Development",
         "wb_name": "Fleet Dev vwb1",
         "file_path": "Fleet Dev vwb1.twb",
         "tags": ["data"],
@@ -107,7 +107,7 @@
         "server_name": "prod",
         "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
         "site_name": "DataLab",
-        "project_path": "Default",
+        "project_path": "Development",
         "wb_name": "multi order v33",
         "file_path": "multi order v33.twb",
         "tags": ["Forecast","Trend"],
@@ -153,7 +153,7 @@
           "publish_ds_data": {
             "publish_ds_server_name": "prod",
             "publish_ds_site_name": "DataLab",
-            "publish_ds_project_name": "Default",
+            "publish_ds_project_name": "Development",
             "is_site_default": false
           }
         }
