@@ -64,7 +64,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasources": [
         {
           "ds_name": "tableau_ari_geotab V2",
@@ -102,7 +102,7 @@
       "index_id": 1,
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": true,
+      "is_wb_publish": false,
       "publish_wb_data": {
         "server_name": "prod",
         "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
