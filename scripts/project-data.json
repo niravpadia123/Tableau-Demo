@@ -12,7 +12,7 @@
         "project_path": "Default",
         "wb_name": "Fleet Dev vwb1",
         "file_path": "Fleet Dev vwb1.twb",
-        "tags": [],
+        "tags": ["data"],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
