@@ -95,7 +95,7 @@
         "project_path": "Dev Final",
         "wb_name": "multi order v33",
         "file_path": "multi order v33.twb",
-        "tags": ["Forecast","Trend"],
+        "tags": [""],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
@@ -125,7 +125,7 @@
           }
         }
       ],
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasources": [
         {
           "ds_name": "Order Multiple Connections",
