@@ -10,8 +10,8 @@
         "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
         "site_name": "DataLab",
         "project_path": "Dev Final",
-        "wb_name": "Fleet wb",
-        "file_path": "Fleet wb.twb",
+        "wb_name": "Forecast Orders",
+        "file_path": "Forecast Orders.twbx",
         "tags": ["new"],
         "hidden_views": [],
         "is_site_default": false,
@@ -64,7 +64,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasources": [
         {
           "ds_name": "tableau_ari_geotab V2",
@@ -93,8 +93,8 @@
         "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
         "site_name": "DataLab",
         "project_path": "Dev Final",
-        "wb_name": "multi order v33",
-        "file_path": "multi order v33.twb",
+        "wb_name": "Superstore _Profitability_Overview",
+        "file_path": "Superstore _Profitability_Overview.twb",
         "tags": ["Forecast","Trend"],
         "hidden_views": [],
         "is_site_default": false,
@@ -125,7 +125,7 @@
           }
         }
       ],
-      "is_datasource_update": true,
+      "is_datasource_update": false,
       "datasources": [
         {
           "ds_name": "Order Multiple Connections",
