@@ -12,7 +12,7 @@
         "project_path": "Dev Working",
         "wb_name": "Fleet wb",
         "file_path": "Fleet wb.twb",
-        "tags": ["new"],
+        "tags": ["fleet","Performance"],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
@@ -96,7 +96,7 @@
         "wb_name": "Multi data Dash",
         "file_path": "Multi data Dash.twb",
         "tags": ["profit","sales"],
-        "hidden_views": [""],
+        "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
       },
@@ -138,7 +138,7 @@
           "publish_ds_data": {
             "publish_ds_server_name": "dev",
             "publish_ds_site_name": "DataLab",
-            "publish_ds_project_name": "Development",
+            "publish_ds_project_name": "Dev Final",
             "is_site_default": false
           }
         }
