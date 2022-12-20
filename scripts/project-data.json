@@ -6,14 +6,14 @@
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "is_wb_publish": true,
       "publish_wb_data": {
-        "server_name": "dev",
-        "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
+        "server_name": "prod",
+        "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
         "site_name": "DataLab",
         "project_path": "Dev Working",
         "wb_name": "Fleet wb",
         "file_path": "Fleet wb.twb",
         "tags": ["fleet","Performance"],
-        "hidden_views": [],
+        "hidden_views": ["Trip History Dashboard"],
         "is_site_default": false,
         "show_tabs": true
       },
@@ -29,11 +29,11 @@
             "AddComment": "Allow",
             "ExportImage": "Allow",
             "ExportData": "Allow",
-            "RunExplainData": "Deny",
-            "ShareView": "Deny",
-            "ViewUnderlyingData": "Deny",                    
-            "WebAuthoring": "Deny",
-            "ExportXml": "Deny",
+            "RunExplainData": "Allow",
+            "ShareView": "Allow",
+            "ViewUnderlyingData": "Allow",                    
+            "WebAuthoring": "Allow",
+            "ExportXml": "Allow",
             "Write": "Deny",
             "CreateRefreshMetrics": "Deny",
             "ChangeHierarchy": "Deny",
@@ -45,8 +45,8 @@
           "permission_group_name": "",
           "permission_user_name": "Nirav.Padia",
           "permission_template": {
-            "Read": "Deny",
-            "Filter": "Deny",
+            "Read": "Allow",
+            "Filter": "Allow",
             "ViewComments": "Allow",
             "AddComment": "Allow",
             "ExportImage": "Allow",
@@ -69,6 +69,89 @@
         {
           "ds_name": "tableau_ari_geotab",
           "get_ds_data": {
+            "get_ds_server_name": "dev",
+            "get_ds_site_name": "DataLab",
+            "get_ds_project_name": "Dev Working",
+            "is_site_default": false
+          },
+          "publish_ds_data": {
+            "publish_ds_server_name": "prod",
+            "publish_ds_site_name": "DataLab",
+            "publish_ds_project_name": "Dev Final",
+            "is_site_default": false
+          }
+        }
+      ]
+    },
+    {
+      "index_id": 1,
+      "dev_server_url": "https://tableau.devinvh.com/",
+      "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
+      "is_wb_publish": true,
+      "publish_wb_data": {
+        "server_name": "prod",
+        "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
+        "site_name": "DataLab",
+        "project_path": "Dev Final",
+        "wb_name": "Fleet Dev wbx v2",
+        "file_path": "Fleet Dev wbx v2.twbx",
+        "tags": ["new","sales"],
+        "hidden_views": ["Trip History Dashboard"],
+        "is_site_default": false,
+        "show_tabs": true
+      },
+      "is_wb_permissions_update": true,
+      "permissions": [
+        {
+          "permission_group_name": "",
+          "permission_user_name": "Anubhuti.Agrawal",
+          "permission_template": {
+            "Read": "Allow",
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Deny",
+            "RunExplainData": "Deny",
+            "ShareView": "Deny",
+            "ViewUnderlyingData": "Deny",                    
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Deny",
+            "ChangeHierarchy": "Deny",
+            "Delete": "Deny",
+            "ChangePermissions": "Deny"
+          }
+        },
+        {
+          "permission_group_name": "",
+          "permission_user_name": "Nirav.Padia",
+          "permission_template": {
+            "Read": "Allow",
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Allow",
+            "RunExplainData": "Allow",
+            "ShareView": "Deny",
+            "ViewUnderlyingData": "Deny",                    
+            "WebAuthoring": "Deny",
+            "ExportXml": "Deny",
+            "Write": "Deny",
+            "CreateRefreshMetrics": "Deny",
+            "ChangeHierarchy": "Deny",
+            "Delete": "Deny",
+            "ChangePermissions": "Deny"
+          }
+        }
+      ],
+      "is_datasource_update": false,
+      "datasources": [
+        {
+          "ds_name": "Order Multiple Connections",
+          "get_ds_data": {
             "get_ds_server_name": "prod",
             "get_ds_site_name": "DataLab",
             "get_ds_project_name": "Dev Final",
@@ -84,18 +167,18 @@
       ]
     },
     {
-      "index_id": 1,
+      "index_id": 2,
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
       "is_wb_publish": true,
       "publish_wb_data": {
-        "server_name": "dev",
-        "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
+        "server_name": "prod",
+        "site_id": "499f7f8a-b012-4fb7-980d-349515374f6e",
         "site_name": "DataLab",
-        "project_path": "Dev Working",
+        "project_path": "Dev Final",
         "wb_name": "Multi data Dash",
         "file_path": "Multi data Dash.twb",
-        "tags": ["new","sales"],
+        "tags": ["multiorder","view"],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
@@ -107,13 +190,13 @@
           "permission_user_name": "Nirav.Padia",
           "permission_template": {
             "Read": "Allow",
-            "Filter": "Deny",
-            "ViewComments": "Deny",
-            "AddComment": "Deny",
-            "ExportImage": "Deny",
-            "ExportData": "Deny",
-            "RunExplainData": "Deny",
-            "ShareView": "Deny",
+            "Filter": "Allow",
+            "ViewComments": "Allow",
+            "AddComment": "Allow",
+            "ExportImage": "Allow",
+            "ExportData": "Allow",
+            "RunExplainData": "Allow",
+            "ShareView": "Allow",
             "ViewUnderlyingData": "Deny",                    
             "WebAuthoring": "Deny",
             "ExportXml": "Deny",
@@ -130,15 +213,15 @@
         {
           "ds_name": "Order Multiple Connections",
           "get_ds_data": {
-            "get_ds_server_name": "prod",
+            "get_ds_server_name": "dev",
             "get_ds_site_name": "DataLab",
-            "get_ds_project_name": "Dev Final",
+            "get_ds_project_name": "Dev Working",
             "is_site_default": false
           },
           "publish_ds_data": {
-            "publish_ds_server_name": "dev",
+            "publish_ds_server_name": "prod",
             "publish_ds_site_name": "DataLab",
-            "publish_ds_project_name": "Dev Working",
+            "publish_ds_project_name": "Dev Final",
             "is_site_default": false
           }
         }
