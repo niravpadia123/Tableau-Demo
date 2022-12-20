@@ -10,9 +10,9 @@
         "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "site_name": "DataLab",
         "project_path": "Dev Working",
-        "wb_name": "FP New",
-        "file_path": "FP New.twb",
-        "tags": ["new"],
+        "wb_name": "Fleet wb",
+        "file_path": "Fleet wb.twb",
+        "tags": ["fleet","Performance"],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
@@ -64,20 +64,20 @@
           }
         }
       ],
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasources": [
         {
           "ds_name": "tableau_ari_geotab",
           "get_ds_data": {
-            "get_ds_server_name": "dev",
-            "get_ds_site_name": "Enterprise",
-            "get_ds_project_name": "TO Work",
-            "is_site_default": true
+            "get_ds_server_name": "prod",
+            "get_ds_site_name": "DataLab",
+            "get_ds_project_name": "Development",
+            "is_site_default": false
           },
           "publish_ds_data": {
             "publish_ds_server_name": "dev",
             "publish_ds_site_name": "DataLab",
-            "publish_ds_project_name": "Dev Working",
+            "publish_ds_project_name": "Development",
             "is_site_default": false
           }
         }
@@ -87,20 +87,20 @@
       "index_id": 1,
       "dev_server_url": "https://tableau.devinvh.com/",
       "prod_server_url": "http://tableau-alb-316754542.us-east-1.elb.amazonaws.com/",
-      "is_wb_publish": false,
+      "is_wb_publish": true,
       "publish_wb_data": {
         "server_name": "dev",
         "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "site_name": "DataLab",
         "project_path": "Dev Final",
-        "wb_name": "multi order v33",
-        "file_path": "multi order v33.twb",
-        "tags": [""],
+        "wb_name": "Multi data Dash",
+        "file_path": "Multi data Dash.twb",
+        "tags": ["profit","sales"],
         "hidden_views": [],
         "is_site_default": false,
         "show_tabs": true
       },
-      "is_wb_permissions_update": false,
+      "is_wb_permissions_update": true,
       "permissions": [
         {
           "permission_group_name": "",
@@ -125,20 +125,20 @@
           }
         }
       ],
-      "is_datasource_update": false,
+      "is_datasource_update": true,
       "datasources": [
         {
           "ds_name": "Order Multiple Connections",
           "get_ds_data": {
-            "get_ds_server_name": "dev",
-            "get_ds_site_name": "Enterprise",
-            "get_ds_project_name": "TO Work",
-            "is_site_default": true
+            "get_ds_server_name": "prod",
+            "get_ds_site_name": "DataLab",
+            "get_ds_project_name": "Dev Final",
+            "is_site_default": false
           },
           "publish_ds_data": {
             "publish_ds_server_name": "dev",
             "publish_ds_site_name": "DataLab",
-            "publish_ds_project_name": "Dev Working",
+            "publish_ds_project_name": "Dev Final",
             "is_site_default": false
           }
         }
