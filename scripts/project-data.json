@@ -103,8 +103,8 @@
       "is_wb_permissions_update": true,
       "permissions": [
         {
-          "permission_group_name": "",
-          "permission_user_name": "Anubhuti.Agrawal",
+          "permission_group_name": "All Users",
+          "permission_user_name": "",
           "permission_template": {
             "Read": "Allow",
             "Filter": "Allow",
