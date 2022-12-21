@@ -10,7 +10,6 @@ from service import service_func
 
 def main(arguments):
     """
-    Main Funcrion
     Get all arguments and use multi processing for execute all tasks
     """
 
