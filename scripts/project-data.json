@@ -12,7 +12,7 @@
         "project_path": "Development",
         "wb_name": "Fleet wb",
         "file_path": "Fleet wb.twb",
-        "tags": ["fleet","Performance"],
+        "tags": ["fleet",""],
         "hidden_views": ["Trip History Dashboard"],
         "is_site_default": false,
         "show_tabs": true
