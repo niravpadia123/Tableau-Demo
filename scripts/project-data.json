@@ -9,7 +9,7 @@
         "server_name": "dev",
         "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "site_name": "DataLab",
-        "project_path": "Development",
+        "project_path": "Dev Working",
         "wb_name": "Fleet wb",
         "file_path": "Fleet wb.twb",
         "tags": ["newfleet"],
@@ -92,7 +92,7 @@
         "server_name": "dev",
         "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "site_name": "DataLab",
-        "project_path": "Development",
+        "project_path": "Dev Working",
         "wb_name": "Forecasting",
         "file_path": "Forecasting.twbx",
         "tags": ["Forecast","sales","fleetnew"],
@@ -175,7 +175,7 @@
         "server_name": "dev",
         "site_id": "e4fc3628-68b4-4a72-a956-9fc3c02192f4",
         "site_name": "DataLab",
-        "project_path": "Dev Final",
+        "project_path": "Dev Working",
         "wb_name": "Multi data Dash",
         "file_path": "Multi data Dash.twb",
         "tags": ["multiorder","view"],
@@ -221,7 +221,7 @@
           "publish_ds_data": {
             "publish_ds_server_name": "dev",
             "publish_ds_site_name": "DataLab",
-            "publish_ds_project_name": "Dev Final",
+            "publish_ds_project_name": "Dev Working",
             "is_site_default": false
           }
         }
